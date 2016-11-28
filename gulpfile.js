@@ -3,16 +3,16 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
-	return gulp.src('./public/stylesheets/**/*.scss')
+	return gulp.src('./src/stylesheets/**/*.scss')
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
 		.pipe(autoprefixer())
-		.pipe(gulp.dest('./dist/assert/stylesheets'));
+		.pipe(gulp.dest('./public/stylesheets'));
 })
 
 gulp.task('watch', function () {
-	gulp.watch('./public/stylesheets/**/*.scss', ['sass']);
+	gulp.watch('./src/stylesheets/*.scss', ['sass']);
 })
 
 gulp.task('default', ['watch']);
