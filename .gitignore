@@ -7,9 +7,6 @@ logs
 *.log
 npm-debug.log*
 
-# MY
-public
-
 
 # Runtime data
 pids
