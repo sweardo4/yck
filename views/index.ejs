@@ -1,30 +1,89 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <title>
+        <%= title %>
+    </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
-    <title><%= title %></title>
+    <!-- seo -->
+    <meta name="keywords" content="亿创客">
+    <meta name="description" content="简介">
 
-    <!-- Bootstrap -->
     <link href="/lib/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-      <div class='container'>
-          <h1><%= title %></h1>
-          <p>Welcome to <%= title %></p>
-      </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+</head>
+
+<body>
+    <div class='container-fluid'>
+        <header class="hd">
+            <div class='hd-inc'>
+                <div class='hd-inc-stips all-alignment'>
+                    <span class="hd-inc-stips-compony">欢迎您来到亿创客电子商务(北京)有限公司</span><span class='hd-inc-stips-tel tel'>400-651-1093</span>
+                </div>
+            </div>
+            <div class="hd-sider-bar ">
+                <div class="all-alignment menu">
+                    <p class="menu-logo"><img src="/img/logo.png" alt=""></p>
+                    <ul class="menu-list">
+                        <li class='menu-list-item active'>
+                            <a href="">
+                                <p>首页</p>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class='menu-list-item '>
+                            <a href="">
+                                <p>关于我们</p>
+                                <p>About us</p>
+                            </a>
+                        </li>
+                        <li class='menu-list-item '>
+                            <a href="">
+                                <p>招商加盟</p>
+                                <p>Join</p>
+                            </a>
+                        </li>
+                        <li class='menu-list-item '>
+                            <a href="">
+                                <p>项目展示</p>
+                                <p>Project</p>
+                            </a>
+                        </li>
+                        <li class='menu-list-item '>
+                            <a href="">
+                                <p>新闻资讯</p>
+                                <p>Project</p>
+                            </a>
+                        </li>
+                        <li class='menu-list-item' >
+                            <a href="">
+                                <p>联系我们</p>
+                                <p>Contect us</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+
+        </div>
+
+        <footer class="ft">
+
+        </footer>
+    </div>
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/lib/js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>

@@ -1,11 +1,11 @@
 export default {
 	client:'mysql',
 	connection:{
-		host:'localhost',
+		host:'123.57.157.30',
 		port:'3306',
-		user:'root',
+		user:'yck',
 		password:'(Yck957?.)',
-		database:'mysql',
+		dbname:'yckdb',
 		charset:'utf8'
 	},
 	debug:'true',

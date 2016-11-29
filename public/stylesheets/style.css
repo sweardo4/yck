@@ -1,1 +1,87 @@
-body{padding:50px;text-align:center;font:30px "Lucida Grande", Helvetica, Arial, sans-serif}a{color:#00B7FF}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.all-alignment {
+  width: 80% !important;
+  min-width: 980px !important; }
+
+.hd {
+  margin: 0 -15px !important;
+  text-align: center;
+  background-color: #1dc15f; }
+  .hd-inc {
+    width: 100%;
+    color: #fff;
+    text-align: center; }
+    .hd-inc-stips {
+      line-height: 30px;
+      display: inline-block; }
+      .hd-inc-stips-compony, .hd-inc-stips-tel {
+        width: 50%;
+        display: inline-block; }
+      .hd-inc-stips-compony {
+        text-align: left; }
+      .hd-inc-stips-tel {
+        text-align: right; }
+  .hd-sider-bar {
+    width: 100%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 2px solid #1dc15f;
+    border-bottom: 2px solid #1dc15f; }
+    .hd-sider-bar .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .hd-sider-bar .menu-logo, .hd-sider-bar .menu-list {
+        height: 170px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      .hd-sider-bar .menu-logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 0; }
+        .hd-sider-bar .menu-logo img {
+          width: 80%; }
+      .hd-sider-bar .menu-list {
+        width: 70%;
+        margin-bottom: 0; }
+        .hd-sider-bar .menu-list li {
+          list-style: none;
+          width: 20%; }
+          .hd-sider-bar .menu-list li a {
+            width: 100%;
+            padding: 56px 10px;
+            display: inline-block;
+            list-style: none;
+            text-decoration: none; }
+            .hd-sider-bar .menu-list li a:hover {
+              background-color: #1dc15f; }
+              .hd-sider-bar .menu-list li a:hover p {
+                color: #fff; }
+          .hd-sider-bar .menu-list li p:first-child {
+            font-weight: 600;
+            color: #000;
+            font-size: 1.5em; }
+          .hd-sider-bar .menu-list li p:last-child {
+            color: #655;
+            font-size: 1em; }

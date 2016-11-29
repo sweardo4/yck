@@ -25,7 +25,12 @@ mysql -uroot //登录
 ```
 实现远程连接
 ```
->use mysql;
->select host,user,password from user;//查看连接状态
->update user set host = '%' where user = 'root';
+mysql> GRANT ALL PRIVILEGES ON *.* TO root@"%" IDENTIFIED BY "root";
+mysql> flush privileges;
 ```
+并修改/etc/mysql/my.cnf 文件
+把下面内容注释掉
+```
+# bind-address:127.0.0.1
+```
+重启mysql服务器
