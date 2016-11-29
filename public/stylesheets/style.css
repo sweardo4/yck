@@ -26,51 +26,29 @@ body {
   .hd-sider-bar {
     width: 100%;
     background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-top: 2px solid #1dc15f;
-    border-bottom: 2px solid #1dc15f; }
+    text-align: center;
+    border-bottom: 4px solid #1dc15f; }
     .hd-sider-bar .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .hd-sider-bar .menu-logo, .hd-sider-bar .menu-list {
-        height: 170px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
+      display: inline-table; }
+      .hd-sider-bar .menu-list, .hd-sider-bar .menu-logo {
+        display: table-cell; }
       .hd-sider-bar .menu-logo {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        margin-bottom: 0; }
+        width: 20%;
+        margin-bottom: 0;
+        width: 16%; }
         .hd-sider-bar .menu-logo img {
-          width: 80%; }
+          width: 80%;
+          vertical-align: inherit; }
       .hd-sider-bar .menu-list {
-        width: 70%;
+        width: 60%;
         margin-bottom: 0; }
         .hd-sider-bar .menu-list li {
+          display: inline-block;
           list-style: none;
-          width: 20%; }
+          width: 16%; }
           .hd-sider-bar .menu-list li a {
             width: 100%;
-            padding: 56px 10px;
+            padding: 40px 5px;
             display: inline-block;
             list-style: none;
             text-decoration: none; }
@@ -79,9 +57,9 @@ body {
               .hd-sider-bar .menu-list li a:hover p {
                 color: #fff; }
           .hd-sider-bar .menu-list li p:first-child {
-            font-weight: 600;
+            font-weight: 400;
             color: #000;
-            font-size: 1.5em; }
+            font-size: 1.4em; }
           .hd-sider-bar .menu-list li p:last-child {
             color: #655;
             font-size: 1em; }
