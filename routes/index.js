@@ -2,7 +2,7 @@ var router = require('koa-router')();
 
 router.get('/', async function (ctx, next) {
   ctx.state = {
-    title: '壹创客'
+    title: 'abc'
   };
   await ctx.render('index', {
   });
