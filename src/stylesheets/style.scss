@@ -1,59 +1,76 @@
 $premery: rgba(29,193,95,1);
+
 body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 // .container-fluid{
 //         min-width: 880px !important;
 // }
+
 .all-alignment {
 	width: 80% !important;
 	min-width: 980px !important;
+	margin:0 10%;
 }
+
 .hd {
 	margin: 0 -15px !important;
 	text-align: center;
 	background-color: $premery;
+
 	&-inc {
 		width: 100%;
 		color: #fff;
 		text-align: center;
+
 		&-stips {
 			line-height: 30px;
 			display: inline-block;
+
 			&-compony,
 			&-tel {
 				width: 50%;
 				display: inline-block;
 			}
+
 			&-compony {
 				text-align: left;
 			}
+
 			&-tel {
 				text-align: right;
 			}
 		}
 	}
+
 	&-sider-bar {
 		width: 100%;
 		background-color: #fff;
 		text-align: center;
-		border-bottom: 4px solid $premery;
+		border-bottom: 2px solid $premery;
+
 		.menu {
 			display: inline-table;
+			height: 10em;
+			overflow: hidden;
+
 			&-list,
 			&-logo {
 				// height: 170px;
 				display: table-cell;
 			}
+
 			&-logo {
-				width: 20%;
 				margin-bottom: 0;
-				width: 16%;
+				width: 15%;
+
 				img {
-					width: 80%;
+					width: 12.6em;
+					height: 5em;
 					vertical-align: inherit;
 				}
 			}
+
 			&-list {
 				width: 60%;
 				margin-bottom: 0;
@@ -62,29 +79,89 @@ body {
 					display: inline-block;
 					list-style: none;
 					width: 16%;
+
 					a {
 						width: 100%;
 						padding: 40px 5px;
 						display: inline-block;
 						list-style: none;
 						text-decoration: none;
+
 						&:hover {
 							background-color: $premery;
+
 							p {
 								color: #fff;
 							}
 						}
 					}
+
 					p:first-child {
 						font-weight: 400;
 						color: #000;
 						font-size: 1.4em;
 					}
+
 					p:last-child {
 						color: #655;
 						font-size: 1em;
 					}
 				}
+			}
+		}
+	}
+}
+
+.main {
+	width: 100%;
+	.carousel {
+		margin: 0 -15px;
+
+		&-indicators {
+			.active,
+			li {
+				width: 60px;
+				height: 5px;
+				border-radius: 1px;
+			}
+
+			.active {
+				background-color: $premery;
+			}
+		}
+
+		&-inner {
+			.item {
+				width: 100%;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.mv {
+		text-align: center;
+		iframe {
+			width: 70%;
+			height: 400px;
+		}
+	}
+
+	.news{
+		margin-top: 20px;
+		.all-alignment{
+			display: table;
+		}
+
+		&-list{
+			background-color: #eee;
+			display: table-cell;
+			padding: 10px;
+			&:nth-child(2){
+				border-left:1px dashed #000;
+				border-right:1px dashed #000;
 			}
 		}
 	}

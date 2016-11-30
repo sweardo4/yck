@@ -13,6 +13,7 @@ const index = require('./routes/index');
 const users = require('./routes/users');
 
 
+
 const db = require('./config/mysql');
 const mysql = require('mysql');
 const connection = mysql.createConnection(db.connection);
@@ -23,9 +24,8 @@ connection.connect(function(err){
     }
     console.log('connection id :' + connection.threadId);
 })
-
-
 connection.end();
+
 
 
 // middlewares
