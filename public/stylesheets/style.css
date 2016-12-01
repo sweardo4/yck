@@ -226,6 +226,8 @@ ul {
       padding-right: 30px;
       line-height: 30px;
       font-size: 16px; }
+      .ft-links-list > li label {
+        display: block; }
       .ft-links-list > li a {
         color: rgba(102, 102, 102, 0.6); }
   .ft-contect {
@@ -235,10 +237,10 @@ ul {
       color: rgba(102, 102, 102, 0.6);
       line-height: 24px;
       font-weight: 600; }
-      .ft-contect p:first-child {
-        color: #1dc15f;
-        font-size: 24px; }
-      .ft-contect p:last-child {
-        padding-top: 40px;
-        color: #1dc15f;
-        font-size: 24px; }
+    .ft-contect-tel {
+      color: #1dc15f;
+      font-size: 24px; }
+    .ft-contect-title {
+      padding-top: 40px;
+      color: #1dc15f;
+      font-size: 24px; }
