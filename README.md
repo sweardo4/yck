@@ -34,3 +34,8 @@ mysql> flush privileges;
 # bind-address:127.0.0.1
 ```
 重启mysql服务器
+
+
+## 问题总结
+### html问题
+inline-block 存在bug

@@ -11,8 +11,7 @@ const logger = require('koa-logger');
 
 const index = require('./routes/index');
 const users = require('./routes/users');
-
-
+const about = require('./routes/about');
 
 const db = require('./config/mysql');
 const mysql = require('mysql');
@@ -48,6 +47,7 @@ app.use(async (ctx, next) => {
 
 router.use('/', index.routes(), index.allowedMethods());
 router.use('/users', users.routes(), users.allowedMethods());
+router.use('/about', about.routes(), about.allowedMethods());
 
 app.use(router.routes(), router.allowedMethods());
 // response

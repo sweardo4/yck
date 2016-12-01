@@ -76,7 +76,7 @@ ul {
               .hd-sider-bar .menu-list li a:hover p {
                 color: #fff; }
           .hd-sider-bar .menu-list li p:first-child {
-            font-weight: 400;
+            font-weight: 600;
             color: #000;
             font-size: 1.4em; }
           .hd-sider-bar .menu-list li p:last-child {
@@ -85,7 +85,11 @@ ul {
 
 .main {
   width: 100%;
-  min-width: 980px; }
+  min-width: 980px;
+  /************* home page ************/
+  /************* home page end ************/
+  /************* about page ************/
+  /************* about page end ************/ }
   .main .carousel {
     margin: 0 -15px; }
     .main .carousel-indicators .active,
@@ -209,6 +213,69 @@ ul {
       margin: 0 -15px; }
     .main .map img {
       width: 100%; }
+  .main .about {
+    margin-top: 20px;
+    text-align: center; }
+    .main .about-list {
+      width: 100%;
+      display: table;
+      font-size: 20px; }
+      .main .about-list ul {
+        display: table-cell; }
+        .main .about-list ul li {
+          display: inherit;
+          padding: 20px 30px 20px 0; }
+          .main .about-list ul li a {
+            text-decoration: none;
+            color: #666666;
+            font-weight: 600; }
+            .main .about-list ul li a.active {
+              color: #1dc15f; }
+      .main .about-list-seedemail {
+        text-align: right; }
+        .main .about-list-seedemail label {
+          color: #666666; }
+        .main .about-list-seedemail a {
+          color: #1dc15f; }
+    .main .about-conpony img {
+      width: 100%; }
+    .main .about-conpony p {
+      margin: 50px 0;
+      font-size: 18px;
+      color: #666666;
+      text-align: left;
+      line-height: 30px;
+      text-indent: 36px; }
+    .main .about-exam {
+      background-color: #c3c3c3;
+      padding: 20px 0;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 20px; }
+      .main .about-exam h2 {
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 0; }
+      .main .about-exam-head {
+        width: 100%;
+        display: table;
+        text-align: left; }
+        .main .about-exam-head p {
+          width: 23%;
+          display: table-cell;
+          padding: 10px 0 10px 30px;
+          font-size: 20px;
+          background-color: #fff; }
+      .main .about-exam-select {
+        background-color: #e8e9e8; }
+        .main .about-exam-select > ul {
+          width: 100%;
+          display: table; }
+          .main .about-exam-select > ul > li {
+            width: 23%;
+            padding: 15px 0 15px 30px;
+            display: table-cell;
+            text-align: left; }
+      .main .about-exam-info p {
+        text-align: left; }
 
 .ft {
   padding: 60px 0;
@@ -229,18 +296,18 @@ ul {
       .ft-links-list > li label {
         display: inline; }
       .ft-links-list > li a {
-        color: rgba(102, 102, 102, 0.6); }
+        color: #666666; }
   .ft-contect {
     display: table-cell;
     font-size: 16px; }
     .ft-contect p {
-      color: rgba(102, 102, 102, 0.6);
+      color: #666666;
       line-height: 24px;
       font-weight: 600; }
-    .ft-contect-tel {
-      color: #1dc15f;
-      font-size: 24px; }
-    .ft-contect-title {
-      padding-top: 40px;
-      color: #1dc15f;
-      font-size: 24px; }
+      .ft-contect p:first-child {
+        color: #1dc15f;
+        font-size: 24px; }
+      .ft-contect p:last-child {
+        padding-top: 40px;
+        color: #1dc15f;
+        font-size: 24px; }

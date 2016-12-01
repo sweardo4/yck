@@ -1,5 +1,6 @@
 $premery: rgba(29,193,95,1);
-$gey:rgba(#666,1);
+$gey: rgba(#666,1);
+
 body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -69,6 +70,7 @@ ul {
 		background-color: #fff;
 		text-align: center;
 		border-bottom: 2px solid $premery;
+
 		.menu {
 			height: 10em;
 			overflow: hidden;
@@ -118,7 +120,7 @@ ul {
 					}
 
 					p:first-child {
-						font-weight: 400;
+						font-weight: 600;
 						color: #000;
 						font-size: 1.4em;
 					}
@@ -136,7 +138,7 @@ ul {
 .main {
 	width: 100%;
 	min-width: 980px;
-
+	/************* home page ************/
 	.carousel {
 		margin: 0 -15px;
 
@@ -359,6 +361,111 @@ ul {
 			width: 100%;
 		}
 	}
+	/************* home page end ************/
+	/************* about page ************/
+	.about {
+		margin-top: 20px;
+		text-align: center;
+
+		&-list {
+			width: 100%;
+			display: table;
+			font-size: 20px;
+
+			ul {
+				display: table-cell;
+
+				li {
+					display: inherit;
+					padding: 20px 30px 20px 0;
+
+					a {
+						text-decoration: none;
+						color: rgba($gey,1);
+						font-weight: 600;
+
+						&.active {
+							color: $premery;
+						}
+					}
+				}
+			}
+
+			&-seedemail {
+				text-align: right;
+
+				label {
+					color: $gey;
+				}
+
+				a {
+					color: $premery;
+				}
+				// 当处于加入我们时邮箱显示
+				// display: none;
+			}
+		}
+		// 公司简介
+		&-conpony {
+			img {
+				width: 100%;
+			}
+
+			p {
+				margin: 50px 0;
+				font-size: 18px;
+				color: rgba($gey,1);
+				text-align: left;
+				line-height: 30px;
+				text-indent: 36px;
+			}
+		}
+		// 加入我们
+		&-exam {
+			background-color: rgba(195,195,195,1);
+			padding: 20px 0;
+			color:rgba(#000,.6);
+			font-size: 20px;
+			h2 {
+				color:rgba(#000,.8);
+				margin-top: 0;
+			}
+
+			&-head {
+				width: 100%;
+				display: table;
+				text-align: left;
+
+				p {
+					width: 23%;
+					display: table-cell;
+					padding: 10px 0 10px 30px;
+					font-size: 20px;
+					background-color: #fff;
+				}
+			}
+
+			&-select {
+				background-color: rgba(232,233,232,1);
+				&>ul {
+					width: 100%;
+					display: table;
+					&>li{
+						width: 23%;
+						padding: 15px 0 15px 30px;
+						display: table-cell;
+						text-align: left;
+					}
+				}
+			}
+			&-info{
+				p{
+					text-align: left;
+				}
+			}
+		}
+	}
+	/************* about page end ************/
 }
 
 .ft {
@@ -370,23 +477,26 @@ ul {
 		padding: 20px 0;
 		border-bottom: 1px solid #888;
 	}
+
 	ul {
 		list-style: none;
 	}
+
 	&-links {
 		display: table-cell;
+
 		&-list {
 			& > li {
-
-				label{
+				label {
 					display: inline;
 				}
 				display: table-cell;
 				padding-right: 30px;
 				line-height: 30px;
 				font-size: 16px;
-				a{
-					color:rgba($gey,.6);
+
+				a {
+					color: rgba($gey,1);
 				}
 			}
 		}
@@ -395,19 +505,22 @@ ul {
 	&-contect {
 		display: table-cell;
 		font-size: 16px;
-		p{
-			color:rgba($gey,.6);
+
+		p {
+			color: rgba($gey,1);
 			line-height: 24px;
 			font-weight: 600;
-		}
-		&-tel{
-			color:$premery;
-			font-size: 24px;
-		}
-		&-title{
-			padding-top: 40px;
-			color:$premery;
-			font-size: 24px;
+
+			&:first-child {
+				color: $premery;
+				font-size: 24px;
+			}
+
+			&:last-child {
+				padding-top: 40px;
+				color: $premery;
+				font-size: 24px;
+			}
 		}
 	}
 }
