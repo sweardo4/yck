@@ -45,9 +45,9 @@ ul {
     text-align: center;
     border-bottom: 2px solid #1dc15f; }
     .hd-sider-bar .menu {
-      display: inline-table;
       height: 10em;
-      overflow: hidden; }
+      overflow: hidden;
+      margin-bottom: -4px; }
       .hd-sider-bar .menu-list, .hd-sider-bar .menu-logo {
         display: table-cell; }
       .hd-sider-bar .menu-logo {

@@ -69,11 +69,10 @@ ul {
 		background-color: #fff;
 		text-align: center;
 		border-bottom: 2px solid $premery;
-
 		.menu {
-			display: inline-table;
 			height: 10em;
 			overflow: hidden;
+			margin-bottom: -4px;
 
 			&-list,
 			&-logo {
