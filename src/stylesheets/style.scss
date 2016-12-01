@@ -380,6 +380,9 @@ ul {
 		display: table-cell;
 		&-list {
 			& > li {
+				label{
+					display: block;
+				}
 				display: table-cell;
 				padding-right: 30px;
 				line-height: 30px;
@@ -398,15 +401,15 @@ ul {
 			color:rgba($gey,.6);
 			line-height: 24px;
 			font-weight: 600;
-			&:first-child{
-				color:$premery;
-				font-size: 24px;
-			}
-			&:last-child{
-				padding-top: 40px;
-				color:$premery;
-				font-size: 24px;
-			}
+		}
+		&-tel{
+			color:$premery;
+			font-size: 24px;
+		}
+		&-title{
+			padding-top: 40px;
+			color:$premery;
+			font-size: 24px;
 		}
 	}
 }
