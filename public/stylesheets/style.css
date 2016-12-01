@@ -58,7 +58,7 @@ ul {
           height: 5em;
           vertical-align: inherit; }
       .hd-sider-bar .menu-list {
-        width: 60%;
+        width: 56%;
         margin-bottom: 0;
         padding-left: 160px; }
         .hd-sider-bar .menu-list li {
@@ -89,7 +89,9 @@ ul {
   /************* home page ************/
   /************* home page end ************/
   /************* about page ************/
-  /************* about page end ************/ }
+  /************* about page end ************/
+  /************* news page start ************/
+  /************* news page end ************/ }
   .main .carousel {
     margin: 0 -15px; }
     .main .carousel-indicators .active,
@@ -276,6 +278,84 @@ ul {
             text-align: left; }
       .main .about-exam-info p {
         text-align: left; }
+  .main .newspage {
+    display: table;
+    text-align: center; }
+    .main .newspage .all-alignment {
+      display: inline-table;
+      margin: 0 -15px; }
+    .main .newspage-menu {
+      margin: 20px -15px; }
+      .main .newspage-menu .current {
+        background-color: #1dc15f;
+        color: #fff; }
+      .main .newspage-menu ul {
+        list-style: none;
+        display: block;
+        background-color: #c3c3c3; }
+        .main .newspage-menu ul li {
+          display: table-cell;
+          line-height: 47px; }
+          .main .newspage-menu ul li a {
+            font-size: 16px;
+            padding: 15px;
+            color: #000;
+            text-decoration: none; }
+            .main .newspage-menu ul li a:hover {
+              background-color: #1dc15f;
+              color: #fff; }
+    .main .newspage-lists {
+      margin: 0 -15px; }
+      .main .newspage-lists a {
+        width: 100%;
+        padding: 20px 0;
+        display: inline-table;
+        text-decoration: none;
+        border-bottom: 1px solid #c3c3c3; }
+        .main .newspage-lists a:last-child {
+          border-bottom-color: #fff; }
+      .main .newspage-lists-img, .main .newspage-lists-w {
+        display: table-cell; }
+      .main .newspage-lists-img {
+        width: 30%; }
+        .main .newspage-lists-img img {
+          width: 100%; }
+      .main .newspage-lists-w {
+        text-align: left;
+        padding: 10px;
+        color: #000;
+        position: relative; }
+        .main .newspage-lists-w h4 {
+          position: absolute;
+          top: 10px; }
+        .main .newspage-lists-w .news-from, .main .newspage-lists-w .news-time {
+          color: #666666;
+          position: absolute;
+          bottom: 0; }
+        .main .newspage-lists-w .news-time {
+          right: 0; }
+    .main .newspage .fanye {
+      margin: 40px 0; }
+      .main .newspage .fanye ul {
+        display: inline-table;
+        list-style: none;
+        text-align: center; }
+        .main .newspage .fanye ul li {
+          display: table-cell;
+          padding: 10px; }
+        .main .newspage .fanye ul a {
+          height: 28px;
+          width: 28px;
+          font-size: 16px;
+          padding: 5px;
+          text-decoration: none;
+          display: inline-block;
+          background-color: #c3c3c3;
+          color: #1dc15f;
+          border-radius: 50%; }
+          .main .newspage .fanye ul a:hover {
+            background-color: #1dc15f;
+            color: #fff; }
 
 .ft {
   padding: 60px 0;
