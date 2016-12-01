@@ -227,7 +227,7 @@ ul {
       line-height: 30px;
       font-size: 16px; }
       .ft-links-list > li label {
-        display: block; }
+        display: inline; }
       .ft-links-list > li a {
         color: rgba(102, 102, 102, 0.6); }
   .ft-contect {
