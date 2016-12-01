@@ -383,7 +383,7 @@ ul {
 				display: table-cell;
 				padding-right: 30px;
 				line-height: 30px;
-				font-size: 18px;
+				font-size: 16px;
 				a{
 					color:rgba($gey,.6);
 				}
@@ -400,12 +400,12 @@ ul {
 			font-weight: 600;
 			&:first-child{
 				color:$premery;
-				font-size: 26px;
+				font-size: 24px;
 			}
 			&:last-child{
 				padding-top: 40px;
 				color:$premery;
-				font-size: 26px;
+				font-size: 24px;
 			}
 		}
 	}
