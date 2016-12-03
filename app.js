@@ -50,6 +50,8 @@ router.use('/', index.routes(), index.allowedMethods());
 router.use('/users', users.routes(), users.allowedMethods());
 router.use('/about', about.routes(), about.allowedMethods());
 router.use('/newslist', newslist.routes(), newslist.allowedMethods());
+router.use('/join', join.routes(), join.allowedMethods());
+router.use('/project', project.routes(), project.allowedMethods());
 
 app.use(router.routes(), router.allowedMethods());
 // response

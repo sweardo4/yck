@@ -91,7 +91,9 @@ ul {
   /************* about page ************/
   /************* about page end ************/
   /************* news page start ************/
-  /************* news page end ************/ }
+  /************* news page end ************/
+  /************* join page start ************/
+  /************* join page end ************/ }
   .main .carousel {
     margin: 0 -15px; }
     .main .carousel-indicators .active,
@@ -328,7 +330,8 @@ ul {
         .main .newspage-lists-w h4 {
           position: absolute;
           top: 10px; }
-        .main .newspage-lists-w .news-from, .main .newspage-lists-w .news-time {
+        .main .newspage-lists-w .news-from,
+        .main .newspage-lists-w .news-time {
           color: #666666;
           position: absolute;
           bottom: 0; }
