@@ -13,7 +13,11 @@ const index = require('./routes/index');
 const users = require('./routes/users');
 const about = require('./routes/about');
 const newslist = require('./routes/newslist');
+const newsinfo = require('./routes/news-info');
 
+const project = require('./routes/project');
+const joinus = require('./routes/joinus');
+const contectus = require('./routes/contectus');
 const db = require('./config/mysql');
 const mysql = require('mysql');
 const connection = mysql.createConnection(db.connection);
@@ -50,8 +54,10 @@ router.use('/', index.routes(), index.allowedMethods());
 router.use('/users', users.routes(), users.allowedMethods());
 router.use('/about', about.routes(), about.allowedMethods());
 router.use('/newslist', newslist.routes(), newslist.allowedMethods());
-router.use('/join', join.routes(), join.allowedMethods());
+router.use('/newslist/newsinfo', newsinfo.routes(), newsinfo.allowedMethods());
+router.use('/joinus', joinus.routes(), joinus.allowedMethods());
 router.use('/project', project.routes(), project.allowedMethods());
+router.use('/contectus', contectus.routes(), contectus.allowedMethods());
 
 app.use(router.routes(), router.allowedMethods());
 // response

@@ -2,9 +2,9 @@ var router = require('koa-router')();
 
 router.get('/', async function (ctx, next) {
   ctx.state = {
-    title: 'join'
+    title: 'joinus'
   };
-  await ctx.render('join', {
+  await ctx.render('joinus', {
   });
 })
 module.exports = router;

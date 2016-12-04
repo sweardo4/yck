@@ -470,41 +470,178 @@ ul {
 				}
 			}
 		}
-		.fanye {
-			margin: 40px 0;
-			ul {
-				display: inline-table;
-				list-style: none;
-				text-align: center;
-				li {
-					display: table-cell;
-					padding: 10px;
-				}
-				a {
-					height: 28px;
-					width: 28px;
-					font-size: 16px;
-					padding: 5px;
-					text-decoration: none;
-					display: inline-block;
-					background-color: $gey-lit;
-					color: $premery;
-					border-radius: 50%;
-					&:hover {
-						background-color: $premery;
-						color: #fff;
-					}
+	}
+
+	.fanye {
+		margin: 40px 0;
+		ul {
+			display: inline-table;
+			list-style: none;
+			text-align: center;
+			li {
+				display: table-cell;
+				padding: 10px;
+			}
+			a {
+				height: 30px;
+				width: 30px;
+				font-size: 16px;
+				padding: 5px;
+				line-height: 22px;
+
+				text-decoration: none;
+				display: inline-block;
+				background-color: rgba($gey-lit,.6);
+				color: $premery;
+				border-radius: 50%;
+				&:hover {
+					background-color: $premery;
+					color: #fff;
 				}
 			}
 		}
 	}
 	/************* news page end ************/
 
-	/************* join page start ************/
+	/************* news info start ************/
+	.newsinfo{
+		text-align: center;
+		.all-alignment{
+			display: inline-table;
+		}
+		&-from{
+		   display: table;
+			 width: 100%;
+			 span{
+				 display: table-cell;
+				 padding: 10px;
+				 color:$gey;
+				 &:nth-child(2){
+					 width: 78%;
+					 text-align: left;
+				 }
+			 }
 
-	   .join{
-			 
-		 }
+		}
+		&-w{
+			text-align: left;
+		}
+
+	}
+
+	/************* news info end ************/
+
+	/************* contectus start ************/
+
+	.contectus{
+		text-align: center;
+		&-img{
+			img{
+				width: 100%;
+			}
+		}
+		&-w{
+			text-align: left;
+			margin: 20px 0;
+			&-t{
+				margin: 40px 0 20px 0;
+				border-bottom: 1px solid $gey-lit;
+			}
+			&-master{
+				display: table;
+				width: 100%;
+				div{
+					display: table-cell;
+					width: 50%;
+					padding-right: 200px;
+					p{
+						color:$gey;
+						&:first-child{
+							color:#333;
+						}
+					}
+				}
+			}
+
+		}
+		&-map{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	/*************  contectus end ************/
+
+	/************* join page start ************/
+	.joinus-page {
+		display: table;
+		text-align: center;
+		width: 100%;
+		div {
+			text-align: left;
+		}
+		&-table {
+			display: table;
+			width: 100%;
+			border-bottom: 1px solid $gey;
+			& > div {
+				position: relative;
+				display: table-cell;
+				padding:20px 0;
+
+				&:first-child {
+					width: 60%;
+					p,
+					ul {
+						position: absolute;
+						top: 15px;
+						line-height: 28px;
+						text-indent: 28px;
+					}
+					ul{
+						li:before{
+							content: "";
+							display: inline-block;
+							width: 10px;
+							height: 10px;
+							border-radius: 10px;
+							background-color: $premery;
+							margin-right: 10px;
+						}
+					}
+				}
+				&:last-child{
+					text-align: center;
+					padding: 20px 10px;
+				}
+				img{
+					width: 100%;
+				}
+			}
+		}
+		&-friend{
+			border-bottom:1px solid $gey;
+			ul{
+				display: block;
+				li{
+					display: inline-block;
+					width: 23.6%;
+					margin: 5px;
+					background-color: rgba($gey,.6);
+					padding: 10px;
+					a{
+						width: 100%;
+						img{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+		ul{
+			list-style: none;
+		}
+	}
 	/************* join page end ************/
 }
 .ft {
