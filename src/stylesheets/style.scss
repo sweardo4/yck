@@ -28,7 +28,6 @@ ul {
 .hd {
 	margin: 0 -15px !important;
 	text-align: center;
-
 	&-inc {
 		background-color: $premery;
 		width: 100%;
@@ -472,7 +471,6 @@ ul {
 			}
 		}
 	}
-
 	.fanye {
 		margin: 40px 0;
 		ul {
@@ -489,7 +487,6 @@ ul {
 				font-size: 16px;
 				padding: 5px;
 				line-height: 22px;
-
 				text-decoration: none;
 				display: inline-block;
 				background-color: rgba($gey-lit,.6);
@@ -503,76 +500,68 @@ ul {
 		}
 	}
 	/************* news page end ************/
-
 	/************* news info start ************/
-	.newsinfo{
+	.newsinfo {
 		text-align: center;
-		.all-alignment{
+		.all-alignment {
 			display: inline-table;
 		}
-		&-from{
-		   display: table;
-			 width: 100%;
-			 span{
-				 display: table-cell;
-				 padding: 10px;
-				 color:$gey;
-				 &:nth-child(2){
-					 width: 78%;
-					 text-align: left;
-				 }
-			 }
-
+		&-from {
+			display: table;
+			width: 100%;
+			span {
+				display: table-cell;
+				padding: 10px;
+				color: $gey;
+				&:nth-child(2) {
+					width: 78%;
+					text-align: left;
+				}
+			}
 		}
-		&-w{
+		&-w {
 			text-align: left;
 		}
-
 	}
-
 	/************* news info end ************/
-
 	/************* contectus start ************/
-
-	.contectus{
+	.contectus {
 		text-align: center;
-		&-img{
-			img{
+		&-img {
+			img {
 				width: 100%;
 			}
 		}
-		&-w{
+		&-w {
 			text-align: left;
 			margin: 20px 0;
-			&-t{
-				margin: 40px 0 20px 0;
+			&-t {
+				margin: 40px 0 20px;
 				border-bottom: 1px solid $gey-lit;
 			}
-			&-master{
+			&-master {
 				display: table;
 				width: 100%;
-				div{
+				div {
 					display: table-cell;
 					width: 50%;
 					padding-right: 200px;
-					p{
-						color:$gey;
-						&:first-child{
-							color:#333;
+					p {
+						color: $gey;
+						&:first-child {
+							color: #333;
 						}
 					}
 				}
 			}
-
 		}
-		&-map{
-			img{
+		&-map {
+			img {
 				width: 100%;
 			}
 		}
 	}
 	/*************  contectus end ************/
-
 	/************* join page start ************/
 	.joinus-page {
 		display: table;
@@ -588,8 +577,7 @@ ul {
 			& > div {
 				position: relative;
 				display: table-cell;
-				padding:20px 0;
-
+				padding: 20px 0;
 				&:first-child {
 					width: 60%;
 					p,
@@ -599,8 +587,8 @@ ul {
 						line-height: 28px;
 						text-indent: 28px;
 					}
-					ul{
-						li:before{
+					ul {
+						li:before {
 							content: "";
 							display: inline-block;
 							width: 10px;
@@ -611,35 +599,35 @@ ul {
 						}
 					}
 				}
-				&:last-child{
+				&:last-child {
 					text-align: center;
 					padding: 20px 10px;
 				}
-				img{
+				img {
 					width: 100%;
 				}
 			}
 		}
-		&-friend{
-			border-bottom:1px solid $gey;
-			ul{
+		&-friend {
+			border-bottom: 1px solid $gey;
+			ul {
 				display: block;
-				li{
+				li {
 					display: inline-block;
 					width: 23.6%;
 					margin: 5px;
 					background-color: rgba($gey,.6);
 					padding: 10px;
-					a{
+					a {
 						width: 100%;
-						img{
+						img {
 							width: 100%;
 						}
 					}
 				}
 			}
 		}
-		ul{
+		ul {
 			list-style: none;
 		}
 	}

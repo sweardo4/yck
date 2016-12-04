@@ -20,6 +20,8 @@ const joinus = require('./routes/joinus');
 const contectus = require('./routes/contectus');
 const db = require('./config/mysql');
 const mysql = require('mysql');
+console.log(db)
+
 const connection = mysql.createConnection(db.connection);
 connection.connect(function(err){
     if(err){
