@@ -28,8 +28,9 @@ ul {
 .hd {
 	margin: 0 -15px !important;
 	text-align: center;
-	background-color: $premery;
+
 	&-inc {
+		background-color: $premery;
 		width: 100%;
 		color: #fff;
 		text-align: center;

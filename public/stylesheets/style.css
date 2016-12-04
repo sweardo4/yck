@@ -19,9 +19,9 @@ ul {
 
 .hd {
   margin: 0 -15px !important;
-  text-align: center;
-  background-color: #1dc15f; }
+  text-align: center; }
   .hd-inc {
+    background-color: #1dc15f;
     width: 100%;
     color: #fff;
     text-align: center; }
