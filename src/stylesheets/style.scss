@@ -60,7 +60,6 @@ ul {
 		text-align: center;
 		border-bottom: 2px solid $premery;
 		.menu {
-			height: 10em;
 			overflow: hidden;
 			margin-bottom: -4px;
 			& > div{
@@ -81,8 +80,10 @@ ul {
 			}
 			&-list {
 				width: 50%;
-				margin-bottom: 0;
 				padding-left: 160px;
+				ul{
+					margin-bottom: 0;
+				}
 				li {
 					display: inline-block;
 					list-style: none;
@@ -245,10 +246,12 @@ ul {
 		}
 	}
 	.contect {
-		background-color: rgba(158,158,158,1);
-		padding: 40px 0;
-		margin: 40px -15px 0;
+		padding: 40px 0 0 0;
 		text-align: center;
+		width: 100%;
+		.all-alignment{
+			background-color: rgba(158,158,158,1);
+		}
 		&-w {
 			h2 {
 				color: rgba(255,255,255,1);
@@ -399,7 +402,6 @@ ul {
 	/************* about page end ************/
 	/************* news page start ************/
 	.newspage {
-		display: table;
 		text-align: center;
 		.all-alignment {
 			display: inline-table;
@@ -420,7 +422,7 @@ ul {
 					line-height: 47px;
 					a {
 						font-size: 16px;
-						padding: 15px;
+						padding: 14px;
 						color: #000;
 						text-decoration: none;
 						&:hover {
@@ -485,11 +487,10 @@ ul {
 				padding: 10px;
 			}
 			a {
-				height: 30px;
-				width: 30px;
-				font-size: 16px;
-				padding: 5px;
-				line-height: 22px;
+				width: 40px;
+			    font-size: 12px;
+			    padding: 5px;
+			    line-height: 32px;
 				text-decoration: none;
 				display: inline-block;
 				background-color: rgba($gey-lit,.6);
@@ -499,6 +500,10 @@ ul {
 					background-color: $premery;
 					color: #fff;
 				}
+
+				height: 40px;
+
+
 			}
 		}
 	}

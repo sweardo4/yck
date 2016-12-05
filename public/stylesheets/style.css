@@ -45,7 +45,6 @@ ul {
     text-align: center;
     border-bottom: 2px solid #1dc15f; }
     .hd-sider-bar .menu {
-      height: 10em;
       overflow: hidden;
       margin-bottom: -4px; }
       .hd-sider-bar .menu > div {
@@ -59,8 +58,9 @@ ul {
           vertical-align: inherit; }
       .hd-sider-bar .menu-list {
         width: 50%;
-        margin-bottom: 0;
         padding-left: 160px; }
+        .hd-sider-bar .menu-list ul {
+          margin-bottom: 0; }
         .hd-sider-bar .menu-list li {
           display: inline-block;
           list-style: none;
@@ -190,10 +190,11 @@ ul {
         .main .friends-list a:first-child {
           margin-left: 0; }
   .main .contect {
-    background-color: #9e9e9e;
-    padding: 40px 0;
-    margin: 40px -15px 0;
-    text-align: center; }
+    padding: 40px 0 0 0;
+    text-align: center;
+    width: 100%; }
+    .main .contect .all-alignment {
+      background-color: #9e9e9e; }
     .main .contect-w h2 {
       color: white;
       margin: 20px;
@@ -286,7 +287,6 @@ ul {
       .main .about-exam-info p {
         text-align: left; }
   .main .newspage {
-    display: table;
     text-align: center; }
     .main .newspage .all-alignment {
       display: inline-table;
@@ -305,7 +305,7 @@ ul {
           line-height: 47px; }
           .main .newspage-menu ul li a {
             font-size: 16px;
-            padding: 15px;
+            padding: 14px;
             color: #000;
             text-decoration: none; }
             .main .newspage-menu ul li a:hover {
@@ -352,16 +352,16 @@ ul {
         display: table-cell;
         padding: 10px; }
       .main .fanye ul a {
-        height: 30px;
-        width: 30px;
-        font-size: 16px;
+        width: 40px;
+        font-size: 12px;
         padding: 5px;
-        line-height: 22px;
+        line-height: 32px;
         text-decoration: none;
         display: inline-block;
         background-color: rgba(195, 195, 195, 0.6);
         color: #1dc15f;
-        border-radius: 50%; }
+        border-radius: 50%;
+        height: 40px; }
         .main .fanye ul a:hover {
           background-color: #1dc15f;
           color: #fff; }
