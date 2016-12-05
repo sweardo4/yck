@@ -63,11 +63,13 @@ ul {
 			height: 10em;
 			overflow: hidden;
 			margin-bottom: -4px;
-			&-list,
-			&-logo {
-				// height: 170px;
+			& > div{
 				display: table-cell;
 			}
+			// &-list,
+			// &-logo {
+			// 	display: table-cell;
+			// }
 			&-logo {
 				margin-bottom: 0;
 				width: 15%;
@@ -78,7 +80,7 @@ ul {
 				}
 			}
 			&-list {
-				width: 56%;
+				width: 50%;
 				margin-bottom: 0;
 				padding-left: 160px;
 				li {
