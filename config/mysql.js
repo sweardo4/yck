@@ -3,8 +3,8 @@ export default {
 	connection:{
 		host:'123.57.157.30',
 		port:'3306',
-		user:'yck',
-		password:'(Yck957?.)',
+		user:'yck_root',
+		password:'CSH?<.>?CSH123',
 		dbname:'yckdb',
 		charset:'utf8'
 	},

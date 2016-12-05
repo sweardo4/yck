@@ -7,17 +7,14 @@ body {
 // .container-fluid{
 //         min-width: 880px !important;
 // }
-
 ul {
 	padding: 0;
 }
-
 .all-alignment {
-	width: 60% !important;
+	width: 70% !important;
 	min-width: 980px !important;
 	display: inline-block;
 }
-
 .yckicon {
 	&:before {
 		font-family: "iconfont" !important;
@@ -28,35 +25,28 @@ ul {
 		-moz-osx-font-smoothing: grayscale;
 	}
 }
-
 .hd {
 	margin: 0 -15px !important;
 	text-align: center;
-	background-color: $premery;
-
 	&-inc {
+		background-color: $premery;
 		width: 100%;
 		color: #fff;
 		text-align: center;
-
 		&-stips {
 			line-height: 30px;
 			display: inline-block;
-
 			&-compony,
 			&-tel {
 				width: 50%;
 				display: inline-block;
 			}
-
 			&-compony {
 				text-align: left;
 			}
-
 			&-tel {
 				text-align: right;
 				line-height: 30px;
-
 				&:before {
 					font-size: 18px;
 					content: "\e638";
@@ -64,67 +54,55 @@ ul {
 			}
 		}
 	}
-
 	&-sider-bar {
 		width: 100%;
 		background-color: #fff;
 		text-align: center;
 		border-bottom: 2px solid $premery;
-
 		.menu {
 			height: 10em;
 			overflow: hidden;
 			margin-bottom: -4px;
-
 			&-list,
 			&-logo {
 				// height: 170px;
 				display: table-cell;
 			}
-
 			&-logo {
 				margin-bottom: 0;
 				width: 15%;
-
 				img {
 					width: 12.6em;
 					height: 5em;
 					vertical-align: inherit;
 				}
 			}
-
 			&-list {
 				width: 56%;
 				margin-bottom: 0;
 				padding-left: 160px;
-
 				li {
 					display: inline-block;
 					list-style: none;
 					width: 16%;
-
 					a {
 						width: 100%;
 						padding: 40px 5px;
 						display: inline-block;
 						list-style: none;
 						text-decoration: none;
-
 						&:hover {
 							background-color: $premery;
-
 							p {
 								color: #fff;
 							}
 						}
 					}
-
 					p:first-child {
 						font-weight: 600;
 						color: #000;
 						font-size: 1.4em;
 					}
-
 					p:last-child {
 						color: #655;
 						font-size: 1em;
@@ -134,14 +112,13 @@ ul {
 		}
 	}
 }
-
 .main {
 	width: 100%;
 	min-width: 980px;
 	/************* home page ************/
+	text-align: center;
 	.carousel {
 		margin: 0 -15px;
-
 		&-indicators {
 			.active,
 			li {
@@ -149,62 +126,50 @@ ul {
 				height: 5px;
 				border-radius: 1px;
 			}
-
 			.active {
 				background-color: $premery;
 			}
 		}
-
 		&-inner {
 			.item {
 				width: 100%;
-
 				img {
 					width: 100%;
 				}
 			}
 		}
 	}
-
 	.mv {
 		text-align: center;
-
 		iframe {
-			width: 80%;
+			width: 100%;
 			height: 500px;
 		}
 	}
-
 	.news {
 		margin-top: 20px;
 		display: table;
 		text-align: center;
-
 		.all-alignment {
 			display: inline-table;
 		}
-
 		&-list {
 			display: table-cell;
 			padding: 10px;
 			background-color: #eee;
-
 			a {
 				display: block;
 				text-align: left;
 				line-height: 30px;
 				color: #000;
 			}
-
 			&-latest {
 				p {
 					width: 100%;
 					position: relative;
-
 					img {
 						width: 100%;
 					}
-
 					a {
 						display: inline-block;
 						position: absolute;
@@ -217,35 +182,29 @@ ul {
 						border-bottom-right-radius: 32px;
 						color: #fff;
 						background-color: rgba(#444,.8);
-
 						&:hover {
 							background-color: $premery;
 							border: 1px solid rgba($premery,.5);
 						}
 					}
 				}
-
 				& > a {
 					padding: 10px;
 					font-size: 14px;
 					font-weight: 600;
 				}
 			}
-
 			&:nth-child(2) {
 				border-left: 1px dashed rgba(#000,.3);
 				border-right: 1px dashed rgba(#000,.3);
 			}
-
 			ul {
 				padding-left: 25px;
-
 				a {
 					font-size: 12px;
 					display: block;
 					position: relative;
 					color: $gey;
-
 					span {
 						&:last-child {
 							position: absolute;
@@ -256,47 +215,38 @@ ul {
 			}
 		}
 	}
-
 	.friends {
 		margin-top: 20px;
-
 		&-w {
 			margin: 10px;
-
 			h2 {
 				font-weight: 600;
 			}
 		}
-
 		&-list {
 			text-align: left;
 			padding-top: 10px;
 			border-top: 1px solid #333;
-
 			a {
 				display: inline-block;
 				width: 19.4%;
 				padding: 10px;
 				margin: 0 5px 5px 0;
 				border: 1px solid rgba(#333,.5);
-
 				img {
 					width: 100%;
 				}
-
 				&:first-child {
 					margin-left: 0;
 				}
 			}
 		}
 	}
-
 	.contect {
 		background-color: rgba(158,158,158,1);
 		padding: 40px 0;
 		margin: 40px -15px 0;
 		text-align: center;
-
 		&-w {
 			h2 {
 				color: rgba(255,255,255,1);
@@ -304,7 +254,6 @@ ul {
 				font-weight: 100;
 			}
 		}
-
 		&-list {
 			a {
 				margin: 20px;
@@ -312,18 +261,15 @@ ul {
 				text-align: center;
 				text-decoration: none;
 				color: rgba(255,255,255,1);
-
 				i {
 					display: inline-block;
 					font-size: 4em;
 					margin: 15px;
 				}
-
 				label {
 					display: block;
 				}
 			}
-
 			.wx {
 				i {
 					&:hover {
@@ -331,7 +277,6 @@ ul {
 					}
 				}
 			}
-
 			.qq {
 				i {
 					&:hover {
@@ -339,7 +284,6 @@ ul {
 					}
 				}
 			}
-
 			.tel {
 				i {
 					&:hover {
@@ -349,14 +293,11 @@ ul {
 			}
 		}
 	}
-
 	.map {
 		width: 100%;
-
 		section {
 			margin: 0 -15px;
 		}
-
 		img {
 			width: 100%;
 		}
@@ -366,38 +307,30 @@ ul {
 	.about {
 		margin-top: 20px;
 		text-align: center;
-
 		&-list {
 			width: 100%;
 			display: table;
 			font-size: 20px;
-
 			ul {
 				display: table-cell;
-
 				li {
 					display: inherit;
 					padding: 20px 30px 20px 0;
-
 					a {
 						text-decoration: none;
 						color: rgba($gey,1);
 						font-weight: 600;
-
 						&.active {
 							color: $premery;
 						}
 					}
 				}
 			}
-
 			&-seedemail {
 				text-align: right;
-
 				label {
 					color: $gey;
 				}
-
 				a {
 					color: $premery;
 				}
@@ -410,7 +343,6 @@ ul {
 			img {
 				width: 100%;
 			}
-
 			p {
 				margin: 50px 0;
 				font-size: 18px;
@@ -424,18 +356,16 @@ ul {
 		&-exam {
 			background-color: rgba(195,195,195,1);
 			padding: 20px 0;
-			color:rgba(#000,.6);
+			color: rgba(#000,.6);
 			font-size: 20px;
 			h2 {
-				color:rgba(#000,.8);
+				color: rgba(#000,.8);
 				margin-top: 0;
 			}
-
 			&-head {
 				width: 100%;
 				display: table;
 				text-align: left;
-
 				p {
 					width: 23%;
 					display: table-cell;
@@ -444,13 +374,12 @@ ul {
 					background-color: #fff;
 				}
 			}
-
 			&-select {
 				background-color: rgba(232,233,232,1);
-				&>ul {
+				& > ul {
 					width: 100%;
 					display: table;
-					&>li{
+					& > li {
 						width: 23%;
 						padding: 15px 0 15px 30px;
 						display: table-cell;
@@ -458,136 +387,264 @@ ul {
 					}
 				}
 			}
-			&-info{
-				p{
+			&-info {
+				p {
 					text-align: left;
 				}
 			}
 		}
 	}
 	/************* about page end ************/
-
 	/************* news page start ************/
-	.newspage{
+	.newspage {
 		display: table;
 		text-align: center;
-
-		.all-alignment{
+		.all-alignment {
 			display: inline-table;
 			margin: 0 -15px;
 		}
-		&-menu{
+		&-menu {
 			margin: 20px -15px;
-
-			.current{
+			.current {
 				background-color: $premery;
-				color:#fff;
+				color: #fff;
 			}
-			ul{
+			ul {
 				list-style: none;
-				display:block;
+				display: block;
 				background-color: rgba(195,195,195,1);
-				li{
+				li {
 					display: table-cell;
 					line-height: 47px;
-					a{
+					a {
 						font-size: 16px;
 						padding: 15px;
-						color:#000;
+						color: #000;
 						text-decoration: none;
-						&:hover{
+						&:hover {
 							background-color: $premery;
-							color:#fff;
+							color: #fff;
 						}
 					}
 				}
 			}
 		}
-		&-lists{
+		&-lists {
 			margin: 0 -15px;
-			a{
+			a {
 				width: 100%;
 				padding: 20px 0;
 				display: inline-table;
 				text-decoration: none;
 				border-bottom: 1px solid $gey-lit;
-				&:last-child{
+				&:last-child {
 					border-bottom-color: #fff;
 				}
 			}
-			&-img,&-w{
+			&-img,
+			&-w {
 				display: table-cell;
 			}
-			&-img{
+			&-img {
 				width: 30%;
-				img{width: 100%;}
+				img {
+					width: 100%;
+				}
 			}
-			&-w{
+			&-w {
 				text-align: left;
 				padding: 10px;
 				color: #000;
 				position: relative;
-				h4{
+				h4 {
 					position: absolute;
-					top:10px;
+					top: 10px;
 				}
-				.news-from,	.news-time{
-					color:$gey;
+				.news-from,
+				.news-time {
+					color: $gey;
 					position: absolute;
 					bottom: 0;
 				}
-				.news-time{
+				.news-time {
 					right: 0;
 				}
 			}
 		}
-		.fanye{
-			margin: 40px 0;
-			ul{
-				display: inline-table;
-				list-style: none;
-				text-align: center;
-				li{
-					display: table-cell;
-					padding: 10px;
-				}
-				a{
-					height: 28px;
-					width: 28px;
-					font-size: 16px;
-					padding: 5px;
-					text-decoration: none;
-					display: inline-block;
-					background-color: $gey-lit;
-					color:$premery;
-					border-radius: 50%;
-					&:hover{
-						background-color: $premery;
-						color: #fff;
-					}
+	}
+	.fanye {
+		margin: 40px 0;
+		ul {
+			display: inline-table;
+			list-style: none;
+			text-align: center;
+			li {
+				display: table-cell;
+				padding: 10px;
+			}
+			a {
+				height: 30px;
+				width: 30px;
+				font-size: 16px;
+				padding: 5px;
+				line-height: 22px;
+				text-decoration: none;
+				display: inline-block;
+				background-color: rgba($gey-lit,.6);
+				color: $premery;
+				border-radius: 50%;
+				&:hover {
+					background-color: $premery;
+					color: #fff;
 				}
 			}
 		}
 	}
 	/************* news page end ************/
-
-
+	/************* news info start ************/
+	.newsinfo {
+		text-align: center;
+		.all-alignment {
+			display: inline-table;
+		}
+		&-from {
+			display: table;
+			width: 100%;
+			span {
+				display: table-cell;
+				padding: 10px;
+				color: $gey;
+				&:nth-child(2) {
+					width: 78%;
+					text-align: left;
+				}
+			}
+		}
+		&-w {
+			text-align: left;
+		}
+	}
+	/************* news info end ************/
+	/************* contectus start ************/
+	.contectus {
+		text-align: center;
+		&-img {
+			img {
+				width: 100%;
+			}
+		}
+		&-w {
+			text-align: left;
+			margin: 20px 0;
+			&-t {
+				margin: 40px 0 20px;
+				border-bottom: 1px solid $gey-lit;
+			}
+			&-master {
+				display: table;
+				width: 100%;
+				div {
+					display: table-cell;
+					width: 50%;
+					padding-right: 200px;
+					p {
+						color: $gey;
+						&:first-child {
+							color: #333;
+						}
+					}
+				}
+			}
+		}
+		&-map {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	/*************  contectus end ************/
+	/************* join page start ************/
+	.joinus-page {
+		display: table;
+		text-align: center;
+		width: 100%;
+		div {
+			text-align: left;
+		}
+		&-table {
+			display: table;
+			width: 100%;
+			border-bottom: 1px solid $gey;
+			& > div {
+				position: relative;
+				display: table-cell;
+				padding: 20px 0;
+				&:first-child {
+					width: 60%;
+					p,
+					ul {
+						position: absolute;
+						top: 15px;
+						line-height: 28px;
+						text-indent: 28px;
+					}
+					ul {
+						li:before {
+							content: "";
+							display: inline-block;
+							width: 10px;
+							height: 10px;
+							border-radius: 10px;
+							background-color: $premery;
+							margin-right: 10px;
+						}
+					}
+				}
+				&:last-child {
+					text-align: center;
+					padding: 20px 10px;
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+		&-friend {
+			border-bottom: 1px solid $gey;
+			ul {
+				display: block;
+				li {
+					display: inline-block;
+					width: 23.6%;
+					margin: 5px;
+					background-color: rgba($gey,.6);
+					padding: 10px;
+					a {
+						width: 100%;
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+		ul {
+			list-style: none;
+		}
+	}
+	/************* join page end ************/
 }
-
 .ft {
 	padding: 100px 0;
 	text-align: center;
-
 	.all-alignment {
 		display: inline-table;
 		padding: 20px 0;
 		border-bottom: 1px solid #888;
 	}
-
 	ul {
 		list-style: none;
 	}
-
 	&-links {
 		display: table-cell;
 		&-list {
@@ -599,28 +656,23 @@ ul {
 				padding-right: 30px;
 				line-height: 30px;
 				font-size: 16px;
-
 				a {
 					color: rgba($gey,1);
 				}
 			}
 		}
 	}
-
 	&-contect {
 		display: table-cell;
 		font-size: 16px;
-
 		p {
 			color: rgba($gey,1);
 			line-height: 24px;
 			font-weight: 600;
-
 			&:first-child {
 				color: $premery;
 				font-size: 24px;
 			}
-
 			&:last-child {
 				padding-top: 40px;
 				color: $premery;
