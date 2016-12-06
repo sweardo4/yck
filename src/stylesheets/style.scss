@@ -154,6 +154,7 @@ ul {
 	.news {
 		margin-top: 20px;
 		display: table;
+		width: 100%;
 		text-align: center;
 		.all-alignment {
 			display: inline-table;
@@ -475,6 +476,7 @@ ul {
 				}
 				.news-time {
 					right: 0;
+					display: inline;
 				}
 			}
 		}
