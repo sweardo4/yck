@@ -6,12 +6,14 @@ body {
 }
 .container-fluid{
         max-width:1920px !important;
+				padding-right: 0 !important;
+        padding-left: 0 !important;
 }
 ul {
 	padding: 0;
 }
 .all-alignment {
-	width: 80% !important;
+	width: 70% !important;
 	min-width: 980px !important;
 	display: inline-block;
 }
@@ -26,7 +28,7 @@ ul {
 	}
 }
 .hd {
-	margin: 0 -15px !important;
+	// margin: 0 -15px !important;
 	text-align: center;
 	&-inc {
 		background-color: $premery;
@@ -60,14 +62,15 @@ ul {
 		text-align: center;
 		border-bottom: 2px solid $premery;
 		.menu {
-			height: 10em;
 			overflow: hidden;
-			margin-bottom: -4px;
-			&-list,
-			&-logo {
-				// height: 170px;
+			display: inline-table !important;
+			& > div{
 				display: table-cell;
 			}
+			// &-list,
+			// &-logo {
+			// 	display: table-cell;
+			// }
 			&-logo {
 				margin-bottom: 0;
 				width: 15%;
@@ -78,9 +81,13 @@ ul {
 				}
 			}
 			&-list {
-				width: 56%;
-				margin-bottom: 0;
-				padding-left: 160px;
+				text-align: right;
+				ul{
+					width: 80%;
+					margin-bottom: 0;
+					display: inline-block;
+					text-align: center;
+				}
 				li {
 					display: inline-block;
 					list-style: none;
@@ -116,6 +123,7 @@ ul {
 	width: 100%;
 	min-width: 980px;
 	/************* home page ************/
+	text-align: center;
 	.carousel {
 		margin: 0 -15px;
 		&-indicators {
@@ -141,13 +149,14 @@ ul {
 	.mv {
 		text-align: center;
 		iframe {
-			width: 80%;
+			width: 100%;
 			height: 500px;
 		}
 	}
 	.news {
 		margin-top: 20px;
 		display: table;
+		width: 100%;
 		text-align: center;
 		.all-alignment {
 			display: inline-table;
@@ -228,7 +237,7 @@ ul {
 			border-top: 1px solid #333;
 			a {
 				display: inline-block;
-				width: 24.48999%;
+				width: 19%;
 				padding: 10px;
 				margin: 0 5px 5px 0;
 				border: 1px solid rgba(#333,.5);
@@ -242,10 +251,13 @@ ul {
 		}
 	}
 	.contect {
-		background-color: rgba(158,158,158,1);
-		padding: 40px 0;
-		margin: 40px -15px 0;
+		padding: 40px 0 0 0;
 		text-align: center;
+		width: 100%;
+		.all-alignment{
+			background-color: rgba(158,158,158,1);
+			padding: 40px 0;
+		}
 		&-w {
 			h2 {
 				color: rgba(255,255,255,1);
@@ -396,7 +408,6 @@ ul {
 	/************* about page end ************/
 	/************* news page start ************/
 	.newspage {
-		display: table;
 		text-align: center;
 		.all-alignment {
 			display: inline-table;
@@ -417,7 +428,7 @@ ul {
 					line-height: 47px;
 					a {
 						font-size: 16px;
-						padding: 15px;
+						padding: 14px;
 						color: #000;
 						text-decoration: none;
 						&:hover {
@@ -467,6 +478,7 @@ ul {
 				}
 				.news-time {
 					right: 0;
+					display: inline;
 				}
 			}
 		}
@@ -482,11 +494,10 @@ ul {
 				padding: 10px;
 			}
 			a {
-				height: 30px;
-				width: 30px;
-				font-size: 16px;
-				padding: 5px;
-				line-height: 22px;
+				width: 40px;
+			    font-size: 12px;
+			    padding: 5px;
+			    line-height: 32px;
 				text-decoration: none;
 				display: inline-block;
 				background-color: rgba($gey-lit,.6);
@@ -496,6 +507,10 @@ ul {
 					background-color: $premery;
 					color: #fff;
 				}
+
+				height: 40px;
+
+
 			}
 		}
 	}
