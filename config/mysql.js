@@ -5,7 +5,7 @@ export default {
 		port:'3306',
 		user:'yck_root',
 		password:'CSH?<.>?CSH123',
-		dbname:'yckdb',
+		database:'yckdb',
 		charset:'utf8'
 	},
 	debug:'true',

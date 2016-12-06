@@ -1,6 +1,9 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
+.container-fluid {
+  max-width: 1920px !important; }
+
 ul {
   padding: 0; }
 
@@ -388,7 +391,7 @@ ul {
       text-align: left;
       margin: 20px 0; }
       .main .contectus-w-t {
-        margin: 40px 0 20px 0;
+        margin: 40px 0 20px;
         border-bottom: 1px solid #c3c3c3; }
       .main .contectus-w-master {
         display: table;

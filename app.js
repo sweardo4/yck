@@ -30,6 +30,9 @@ connection.connect(function(err){
     }
     console.log('connection id :' + connection.threadId);
 })
+connection.query('SELECT * FROM admin',function(err,rows,fields){
+  console.log(rows);
+})
 connection.end();
 
 

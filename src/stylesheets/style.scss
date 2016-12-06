@@ -4,9 +4,9 @@ $gey_lit: rgba(195,195,195,1);
 body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-// .container-fluid{
-//         min-width: 880px !important;
-// }
+.container-fluid{
+        max-width:1920px !important;
+}
 ul {
 	padding: 0;
 }
