@@ -1,22 +1,29 @@
-$premery: rgba(29,193,95,1);
+$premery: rgba(13,200,114,1);
 $gey: rgba(#666,1);
 $gey_lit: rgba(195,195,195,1);
+$myw: #fdffff;
+
 body {
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font: 14px 'Microsoft YaHei',Arial,Helvetica,sans-serif
+
 }
-.container-fluid{
-        max-width:1920px !important;
-				padding-right: 0 !important;
-        padding-left: 0 !important;
+
+.container-fluid {
+	max-width: 1920px !important;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
 }
+
 ul {
 	padding: 0;
 }
+
 .all-alignment {
-	width: 70% !important;
+	width: 62.5% !important;
 	min-width: 980px !important;
 	display: inline-block;
 }
+
 .yckicon {
 	&:before {
 		font-family: "iconfont" !important;
@@ -27,28 +34,35 @@ ul {
 		-moz-osx-font-smoothing: grayscale;
 	}
 }
+
 .hd {
 	// margin: 0 -15px !important;
 	text-align: center;
+
 	&-inc {
 		background-color: $premery;
 		width: 100%;
-		color: #fff;
+		color: $myw;
 		text-align: center;
+
 		&-stips {
 			line-height: 30px;
 			display: inline-block;
+
 			&-compony,
 			&-tel {
 				width: 50%;
 				display: inline-block;
 			}
+
 			&-compony {
 				text-align: left;
 			}
+
 			&-tel {
 				text-align: right;
 				line-height: 30px;
+
 				&:before {
 					font-size: 18px;
 					content: "\e638";
@@ -56,15 +70,18 @@ ul {
 			}
 		}
 	}
+
 	&-sider-bar {
 		width: 100%;
-		background-color: #fff;
+		background-color: $myw;
 		text-align: center;
 		border-bottom: 2px solid $premery;
+
 		.menu {
 			overflow: hidden;
 			display: inline-table !important;
-			& > div{
+
+			& > div {
 				display: table-cell;
 			}
 			// &-list,
@@ -74,145 +91,174 @@ ul {
 			&-logo {
 				margin-bottom: 0;
 				width: 15%;
+
 				img {
-					width: 12.6em;
-					height: 5em;
+					width: 100%;
 					vertical-align: inherit;
 				}
 			}
+
 			&-list {
 				text-align: right;
-				ul{
+
+				ul {
 					width: 80%;
 					margin-bottom: 0;
 					display: inline-block;
 					text-align: center;
 				}
+
 				li {
 					display: inline-block;
 					list-style: none;
 					width: 16%;
+
 					a {
 						width: 100%;
-						padding: 40px 5px;
+						padding: 22px 5px;
 						display: inline-block;
 						list-style: none;
 						text-decoration: none;
+
 						&:hover {
 							background-color: $premery;
+
 							p {
-								color: #fff;
+								color: $myw;
 							}
 						}
 					}
+
 					p:first-child {
 						font-weight: 600;
 						color: #000;
-						font-size: 1.4em;
+						font-size: 18px;
 					}
+
 					p:last-child {
 						color: #655;
-						font-size: 1em;
+						font-size: 14px;
 					}
 				}
 			}
 		}
 	}
 }
+
 .main {
 	width: 100%;
 	min-width: 980px;
 	/************* home page ************/
 	text-align: center;
+
 	.carousel {
-		margin: 0 -15px;
 		&-indicators {
 			.active,
 			li {
-				width: 60px;
+				width: 66px;
 				height: 5px;
 				border-radius: 1px;
 			}
+
 			.active {
 				background-color: $premery;
 			}
 		}
+
 		&-inner {
 			.item {
 				width: 100%;
+
 				img {
 					width: 100%;
 				}
 			}
 		}
 	}
+
 	.mv {
 		text-align: center;
+
 		iframe {
 			width: 100%;
 			height: 500px;
 		}
 	}
+
 	.news {
 		margin-top: 20px;
 		display: table;
 		width: 100%;
 		text-align: center;
+
 		.all-alignment {
 			display: inline-table;
 		}
+
 		&-list {
 			display: table-cell;
 			padding: 10px;
 			background-color: #eee;
+
 			a {
 				display: block;
 				text-align: left;
 				line-height: 30px;
 				color: #000;
 			}
+
 			&-latest {
 				p {
 					width: 100%;
 					position: relative;
+
 					img {
 						width: 100%;
 					}
+
 					a {
 						display: inline-block;
 						position: absolute;
-						top: 20px;
+						top: 9px;
 						left: 0;
-						padding: 0 15px;
+						padding: 0 10px;
+						font-size: 12px;
+						line-height: 25px;
 						text-decoration: none;
 						border: 1px solid rgba(#578,.5);
 						border-top-right-radius: 32px;
 						border-bottom-right-radius: 32px;
-						color: #fff;
+						color: $myw;
 						background-color: rgba(#444,.8);
+
 						&:hover {
 							background-color: $premery;
 							border: 1px solid rgba($premery,.5);
 						}
 					}
 				}
+
 				& > a {
 					padding: 10px;
 					font-size: 14px;
 					font-weight: 600;
 				}
 			}
+
 			&:nth-child(2) {
 				border-left: 1px dashed rgba(#000,.3);
 				border-right: 1px dashed rgba(#000,.3);
 			}
+
 			ul {
 				padding-left: 25px;
+
 				a {
 					font-size: 12px;
 					display: block;
 					position: relative;
 					color: $gey;
+
 					span {
 						&:last-child {
 							position: absolute;
@@ -223,41 +269,53 @@ ul {
 			}
 		}
 	}
+
 	.friends {
 		margin-top: 20px;
+
 		&-w {
 			margin: 10px;
+
 			h2 {
 				font-weight: 600;
 			}
 		}
+
 		&-list {
 			text-align: left;
 			padding-top: 10px;
 			border-top: 1px solid #333;
+
 			a {
 				display: inline-block;
-				width: 19%;
+				width: 24.49%;
+				height: 78px;
 				padding: 10px;
-				margin: 0 5px 5px 0;
+				margin: 4px 2.5px ;
 				border: 1px solid rgba(#333,.5);
+				border-radius: 8px;
+				background-color: #f5f5f5;
 				img {
 					width: 100%;
 				}
+
 				&:first-child {
 					margin-left: 0;
 				}
 			}
 		}
 	}
+
 	.contect {
-		padding: 40px 0 0 0;
+		padding: 40px 0 0;
 		text-align: center;
 		width: 100%;
-		.all-alignment{
+
+		.all-alignment {
 			background-color: rgba(158,158,158,1);
 			padding: 40px 0;
 		}
+
 		&-w {
 			h2 {
 				color: rgba(255,255,255,1);
@@ -265,6 +323,7 @@ ul {
 				font-weight: 100;
 			}
 		}
+
 		&-list {
 			a {
 				margin: 20px;
@@ -272,15 +331,18 @@ ul {
 				text-align: center;
 				text-decoration: none;
 				color: rgba(255,255,255,1);
+
 				i {
 					display: inline-block;
 					font-size: 4em;
 					margin: 15px;
 				}
+
 				label {
 					display: block;
 				}
 			}
+
 			.wx {
 				i {
 					&:hover {
@@ -288,6 +350,7 @@ ul {
 					}
 				}
 			}
+
 			.qq {
 				i {
 					&:hover {
@@ -295,6 +358,7 @@ ul {
 					}
 				}
 			}
+
 			.tel {
 				i {
 					&:hover {
@@ -304,11 +368,14 @@ ul {
 			}
 		}
 	}
+
 	.map {
 		width: 100%;
+
 		section {
 			margin: 0 -15px;
 		}
+
 		img {
 			width: 100%;
 		}
@@ -318,30 +385,38 @@ ul {
 	.about {
 		margin-top: 20px;
 		text-align: center;
+
 		&-list {
 			width: 100%;
 			display: table;
 			font-size: 20px;
+
 			ul {
 				display: table-cell;
+
 				li {
 					display: inherit;
 					padding: 20px 30px 20px 0;
+
 					a {
 						text-decoration: none;
 						color: rgba($gey,1);
 						font-weight: 600;
+
 						&.active {
 							color: $premery;
 						}
 					}
 				}
 			}
+
 			&-seedemail {
 				text-align: right;
+
 				label {
 					color: $gey;
 				}
+
 				a {
 					color: $premery;
 				}
@@ -354,6 +429,7 @@ ul {
 			img {
 				width: 100%;
 			}
+
 			p {
 				margin: 50px 0;
 				font-size: 18px;
@@ -369,27 +445,33 @@ ul {
 			padding: 20px 0;
 			color: rgba(#000,.6);
 			font-size: 20px;
+
 			h2 {
 				color: rgba(#000,.8);
 				margin-top: 0;
 			}
+
 			&-head {
 				width: 100%;
 				display: table;
 				text-align: left;
+
 				p {
 					width: 23%;
 					display: table-cell;
 					padding: 10px 0 10px 30px;
 					font-size: 20px;
-					background-color: #fff;
+					background-color: $myw;
 				}
 			}
+
 			&-select {
 				background-color: rgba(232,233,232,1);
+
 				& > ul {
 					width: 100%;
 					display: table;
+
 					& > li {
 						width: 23%;
 						padding: 15px 0 15px 30px;
@@ -398,6 +480,7 @@ ul {
 					}
 				}
 			}
+
 			&-info {
 				p {
 					text-align: left;
@@ -409,73 +492,87 @@ ul {
 	/************* news page start ************/
 	.newspage {
 		text-align: center;
+
 		.all-alignment {
 			display: inline-table;
-			margin: 0 -15px;
 		}
+
 		&-menu {
-			margin: 20px -15px;
+			margin: 20px 0;
+
 			.current {
 				background-color: $premery;
-				color: #fff;
+				color: $myw;
 			}
+
 			ul {
 				list-style: none;
 				display: block;
 				background-color: rgba(195,195,195,1);
+
 				li {
 					display: table-cell;
 					line-height: 47px;
+
 					a {
 						font-size: 16px;
 						padding: 14px;
 						color: #000;
 						text-decoration: none;
+
 						&:hover {
 							background-color: $premery;
-							color: #fff;
+							color: $myw;
 						}
 					}
 				}
 			}
 		}
+
 		&-lists {
-			margin: 0 -15px;
 			a {
 				width: 100%;
 				padding: 20px 0;
 				display: inline-table;
 				text-decoration: none;
 				border-bottom: 1px solid $gey-lit;
+
 				&:last-child {
-					border-bottom-color: #fff;
+					border-bottom-color: $myw;
 				}
 			}
+
 			&-img,
 			&-w {
 				display: table-cell;
 			}
+
 			&-img {
 				width: 30%;
+
 				img {
 					width: 100%;
 				}
 			}
+
 			&-w {
 				text-align: left;
 				padding: 10px;
 				color: #000;
 				position: relative;
+
 				h4 {
 					position: absolute;
 					top: 10px;
 				}
+
 				.news-from,
 				.news-time {
 					color: $gey;
 					position: absolute;
 					bottom: 0;
 				}
+
 				.news-time {
 					right: 0;
 					display: inline;
@@ -483,34 +580,36 @@ ul {
 			}
 		}
 	}
+
 	.fanye {
 		margin: 40px 0;
+
 		ul {
 			display: inline-table;
 			list-style: none;
 			text-align: center;
+
 			li {
 				display: table-cell;
 				padding: 10px;
 			}
+
 			a {
 				width: 40px;
-			    font-size: 12px;
-			    padding: 5px;
-			    line-height: 32px;
+				font-size: 12px;
+				padding: 5px;
+				line-height: 32px;
 				text-decoration: none;
 				display: inline-block;
 				background-color: rgba($gey-lit,.6);
 				color: $premery;
 				border-radius: 50%;
+
 				&:hover {
 					background-color: $premery;
-					color: #fff;
+					color: $myw;
 				}
-
 				height: 40px;
-
-
 			}
 		}
 	}
@@ -518,22 +617,27 @@ ul {
 	/************* news info start ************/
 	.newsinfo {
 		text-align: center;
+
 		.all-alignment {
 			display: inline-table;
 		}
+
 		&-from {
 			display: table;
 			width: 100%;
+
 			span {
 				display: table-cell;
 				padding: 10px;
 				color: $gey;
+
 				&:nth-child(2) {
 					width: 78%;
 					text-align: left;
 				}
 			}
 		}
+
 		&-w {
 			text-align: left;
 		}
@@ -542,27 +646,34 @@ ul {
 	/************* contectus start ************/
 	.contectus {
 		text-align: center;
+
 		&-img {
 			img {
 				width: 100%;
 			}
 		}
+
 		&-w {
 			text-align: left;
 			margin: 20px 0;
+
 			&-t {
 				margin: 40px 0 20px;
 				border-bottom: 1px solid $gey-lit;
 			}
+
 			&-master {
 				display: table;
 				width: 100%;
+
 				div {
 					display: table-cell;
 					width: 50%;
 					padding-right: 200px;
+
 					p {
 						color: $gey;
+
 						&:first-child {
 							color: #333;
 						}
@@ -570,6 +681,7 @@ ul {
 				}
 			}
 		}
+
 		&-map {
 			img {
 				width: 100%;
@@ -582,19 +694,24 @@ ul {
 		display: table;
 		text-align: center;
 		width: 100%;
+
 		div {
 			text-align: left;
 		}
+
 		&-table {
 			display: table;
 			width: 100%;
 			border-bottom: 1px solid $gey;
+
 			& > div {
 				position: relative;
 				display: table-cell;
 				padding: 20px 0;
+
 				&:first-child {
 					width: 60%;
+
 					p,
 					ul {
 						position: absolute;
@@ -602,6 +719,7 @@ ul {
 						line-height: 28px;
 						text-indent: 28px;
 					}
+
 					ul {
 						li:before {
 							content: "";
@@ -614,53 +732,49 @@ ul {
 						}
 					}
 				}
+
 				&:last-child {
 					text-align: center;
 					padding: 20px 10px;
 				}
+
 				img {
 					width: 100%;
 				}
 			}
 		}
+
 		&-friend {
 			border-bottom: 1px solid $gey;
-			ul {
-				display: block;
-				li {
-					display: inline-block;
-					width: 23.6%;
-					margin: 5px;
-					background-color: rgba($gey,.6);
-					padding: 10px;
-					a {
-						width: 100%;
-						img {
-							width: 100%;
-						}
-					}
-				}
+			div{
+				border-top: none;
 			}
 		}
+
 		ul {
 			list-style: none;
 		}
 	}
 	/************* join page end ************/
 }
+
 .ft {
 	padding: 100px 0;
 	text-align: center;
+
 	.all-alignment {
 		display: inline-table;
 		padding: 20px 0;
 		border-bottom: 1px solid #888;
 	}
+
 	ul {
 		list-style: none;
 	}
+
 	&-links {
 		display: table-cell;
+
 		&-list {
 			& > li {
 				label {
@@ -670,23 +784,28 @@ ul {
 				padding-right: 30px;
 				line-height: 30px;
 				font-size: 16px;
+
 				a {
 					color: rgba($gey,1);
 				}
 			}
 		}
 	}
+
 	&-contect {
 		display: table-cell;
 		font-size: 16px;
+
 		p {
 			color: rgba($gey,1);
 			line-height: 24px;
 			font-weight: 600;
+
 			&:first-child {
 				color: $premery;
 				font-size: 24px;
 			}
+
 			&:last-child {
 				padding-top: 40px;
 				color: $premery;
