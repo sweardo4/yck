@@ -263,7 +263,7 @@ ul {
       margin: 30px;
       font-weight: bold; }
     .main .contect-list a {
-      margin: 30px 40px;
+      padding: 30px 40px;
       display: inline-block;
       text-align: center;
       text-decoration: none;
@@ -274,8 +274,16 @@ ul {
         margin: 15px; }
       .main .contect-list a label {
         display: block; }
-    .main .contect-list .wx i:hover {
-      color: #31d531; }
+    .main .contect-list .wx {
+      position: relative; }
+      .main .contect-list .wx i:hover {
+        color: #31d531; }
+      .main .contect-list .wx img {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
     .main .contect-list .qq i:hover {
       color: #329cef; }
     .main .contect-list .tel i:hover {

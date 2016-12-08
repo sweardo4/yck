@@ -1,0 +1,17 @@
+<script type="text/javascript">
+
+window.onload = function(){
+	var is_stip = true;
+	$(document).on('click','.sendexam',function(){
+		if(is_stip){
+			$('.sendexam-stip').show();
+			is_stip = false;
+		}
+	})
+	$(document).on('click','.sendexam-stip',function(){
+		$('.sendexam-stip').hide();
+		is_stip=true;
+	})
+}
+
+</script>

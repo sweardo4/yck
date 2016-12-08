@@ -394,7 +394,7 @@ ul {
 
 		&-list {
 			a {
-				margin: 30px 40px;
+				padding: 30px 40px;
 				display: inline-block;
 				text-align: center;
 				text-decoration: none;
@@ -412,11 +412,21 @@ ul {
 			}
 
 			.wx {
+				position: relative;
 				i {
 					&:hover {
 						color: #31d531;
+
 					}
 				}
+				img{
+					display: none;
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
 			}
 
 			.qq {
