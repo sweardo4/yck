@@ -40,10 +40,12 @@ ul {
         text-align: left; }
       .hd-inc-stips-tel {
         text-align: right;
-        line-height: 30px; }
+        line-height: 30px;
+        font-size: 16px; }
         .hd-inc-stips-tel:before {
-          font-size: 18px;
-          content: "\e638"; }
+          content: "\e638";
+          font-size: 22px;
+          display: inline-block; }
   .hd-sider-bar {
     width: 100%;
     background-color: #fdffff;
@@ -372,7 +374,7 @@ ul {
           display: table; }
           .main .about-exam-select > ul > li {
             width: 23%;
-            padding: 10px 0 0 0;
+            padding: 10px 0 0;
             text-align: center;
             display: table-cell; }
       .main .about-exam-info {

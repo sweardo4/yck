@@ -61,10 +61,11 @@ ul {
 			&-tel {
 				text-align: right;
 				line-height: 30px;
-
+				font-size: 16px;
 				&:before {
-					font-size: 18px;
 					content: "\e638";
+					font-size: 22px;
+					display: inline-block;
 				}
 			}
 		}
@@ -154,8 +155,7 @@ ul {
 	min-width: 980px;
 	/************* home page ************/
 	text-align: center;
-
-// 立即发送简历按钮
+	// 立即发送简历按钮
 	.sendexam {
 		background: -prefix-linear-zgradient(top, #47f3a4, #13ae67) !important;
 		background: linear-gradient(to bottom, #47f3a4, #13ae67) !important;
@@ -163,43 +163,40 @@ ul {
 		border: none;
 		color: $myw;
 		padding: 5px 10px;
-
 		// 立即发送弹窗
-		&-stip{
+		&-stip {
 			display: none;
 			position: fixed;
 			width: 100%;
 			height: 1200px;
 			background-color: rgba(#000,.25);
-			top:0;
+			top: 0;
 			left: 0;
-			b{
+
+			b {
 				position: absolute;
-				top:20px;
+				top: 20px;
 				right: 20px;
 				color: #000;
 				font-size: 30px;
 				cursor: pointer;
 			}
-			div{
+
+			div {
 				position: absolute;
 				top: 30%;
 				display: inline-block;
 				padding: 20px 40px;
-				left:40%;
+				left: 40%;
 				background-color: $myw;
-				span{
-					color:$premery;
+
+				span {
+					color: $premery;
 				}
 			}
 		}
 	}
-
-
-
-
-
-// 轮播图
+	// 轮播图
 	.carousel {
 		&-indicators {
 			.active,
@@ -579,7 +576,7 @@ ul {
 
 					& > li {
 						width: 23%;
-						padding: 10px 0 0 0;
+						padding: 10px 0 0;
 						text-align: center;
 						display: table-cell;
 					}
@@ -591,16 +588,19 @@ ul {
 				div {
 					text-align: left;
 					margin: 20px 30px;
-					p{
+
+					p {
 						font-size: 20px;
 					}
-					li{
+
+					li {
 						font-size: 14px;
-						color:#757575;
-						padding: 10px
+						color: #757575;
+						padding: 10px;
 					}
 					border-bottom: 1px solid #ccc;
-					&:last-child{
+
+					&:last-child {
 						border-bottom: none;
 					}
 				}
