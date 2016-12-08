@@ -248,7 +248,8 @@ ul {
         color: #ababab;
         text-decoration: none; }
         .main .friends-more a:hover {
-          color: #0ccb76; }
+          color: #0ccb76;
+          border: 1px solid #0ccb76; }
   .main .contect {
     padding: 40px 0 0;
     text-align: center;
