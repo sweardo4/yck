@@ -18,6 +18,12 @@ const newsinfo = require('./routes/news-info');
 const project = require('./routes/project');
 const joinus = require('./routes/joinus');
 const contectus = require('./routes/contectus');
+
+
+// api
+const testapi = require('./routes/api/test.js')
+
+
 const db = require('./config/mysql');
 const mysql = require('mysql');
 console.log(db)
@@ -63,6 +69,9 @@ router.use('/newslist/newsinfo', newsinfo.routes(), newsinfo.allowedMethods());
 router.use('/joinus', joinus.routes(), joinus.allowedMethods());
 router.use('/project', project.routes(), project.allowedMethods());
 router.use('/contectus', contectus.routes(), contectus.allowedMethods());
+
+router.use('/api/test',testapi.routes(),testapi.allowedMethods());
+
 
 app.use(router.routes(), router.allowedMethods());
 // response
