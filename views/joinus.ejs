@@ -1,197 +1,64 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-
-<head>
-	<meta charset="utf-8">
-	<title>
-		<%= title %>
-	</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="renderer" content="webkit">
-	<!-- seo -->
-	<meta name="keywords" content="亿创客">
-	<meta name="description" content="简介">
-
-	<link href="/lib/css/bootstrap.min.css" rel="stylesheet">
-	<link rel='stylesheet' href='/stylesheets/style.css' />
-	<link rel='stylesheet' href='/stylesheets/iconfont.css' />
-	<!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-	<div class='container-fluid'>
-		<header class="hd">
-			<div class='hd-inc'>
-				<div class='hd-inc-stips all-alignment'>
-					<span class="hd-inc-stips-compony">欢迎您来到亿创客电子商务(北京)有限公司</span><span class='hd-inc-stips-tel yckicon'>401-651-1093</span>
-				</div>
-			</div>
-			<div class="hd-sider-bar">
-				<div class="all-alignment menu">
-					<div class="menu-logo"><img src="/img/logo.png" alt=""></div>
-					<div class="menu-list">
-						<ul id="lava">
-							<li class='menu-list-item current'>
-								<a href="/">
-									<p>首页</p>
-									<p>Home</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/about">
-									<p>关于我们</p>
-									<p>About us</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/joinus">
-									<p>招商加盟</p>
-									<p>Join</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/project">
-									<p>项目展示</p>
-									<p>Project</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/newslist">
-									<p>新闻资讯</p>
-									<p>News</p>
-								</a>
-							</li>
-							<li class='menu-list-item'>
-								<a href="/contectus">
-									<p>联系我们</p>
-									<p>Contect us</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<div class="main">
-			<div class="joinus-page">
-				<section class="all-alignment">
-					<div class="joinus-page-investment">
-						<h3>招商简介</h3>
-						<div class='joinus-page-table'>
-							<div>
-								<p>
-									商家提供详细的产品资料及电商图片，我方整理后投放到平台，商家通过平台账户处理查询订单，发货，收款等相关业务，采用商家
-								</p>
-							</div>
-							<div>
-								<img src="./img/zsjj.jpg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="joinus-page-discount">
-						<h3>加盟优惠政策</h3>
-						<div class='joinus-page-table'>
-							<div>
-								<ul>
-									<li>各省市同类产品只能优选一家上平台，实现产品无竞争，稳销量。</li>
-									<li>各省市同类产品只能优选一家上平台，实现产品无竞争，稳销量。 </li>
-									<li>各省市同类产品只能优选一家上平台，实现产品无竞争，稳销量。 </li>
-									<li>各省市同类产品只能优选一家上平台，实现产品无竞争，稳销量。 </li>
-								</ul>
-							</div>
-							<div>
-								<img src="./img/zsyh.jpg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="joinus-page-friend">
-						<h3>战略合作伙伴</h3>
-						<div class="friends-list">
-							<a href="javascript:;"><img src="./img/hdt-logo.png" alt=""></a><a href="javascript:;"><img src="./img/jy-logo.png" alt=""></a><a href="javascript:;"><img src="./img/ssr-logo.png" alt=""></a><a href="javascript:;"><img src="./img/xdmy-logo.png" alt=""></a><a href="javascript:;"><img src="./img/ydsh-logo.png" alt=""></a><a href="javascript:;"><img src="./img/zrp-logo.png" alt=""></a><a href="javascript:;"><img src="./img/zyh-logo.png" alt=""></a><a href="javascript:;"><img src="./img/mf-logo.png" alt=""></a>
-						</div>
-					</div>
-					<div class="joinus-page-service">
-						<h3>招商服务</h3>
-						<section>
-							<p>联系人：赵经理</p>
-							<p>招商电话:010-8722-0575</p>
-							<p>email：1652686754@qq.com</p>
-							<p>qq:1652686754</p>
-							<p>邮编:100176</p>
-							<p>公司地址:北京市大兴区亦庄经济技术开发区</p>
-						</section>
-					</div>
-				</section>
-			</div>
-		</div>
-
-		
-		<footer class="ft">
+<% include header.ejs%>
+	<div class="main">
+		<div class="joinus-page">
 			<section class="all-alignment">
-				<div class="ft-links">
-					<ul class="ft-links-list">
-						<li>
-							<label for="">关于我们</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">招商加盟</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">项目展示</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">B2C</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">新闻资讯</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">联系我们</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-					</ul>
+				<div class="joinus-page-investment">
+					<h3>招商简介</h3>
+					<div class='joinus-page-table'>
+						<div>
+							<p>
+								商家提供详细的产品资料及电商图片，我方整理后投放到平台，商家通过平台账户处理查询订单，发货，收款等相关业务，采用商家
+							</p>
+						</div>
+						<div>
+							<img src="./img/zsjj.jpg" alt="">
+						</div>
+					</div>
 				</div>
-				<div class="ft-contect">
-					<p class='ft-contect-tel'>400-651-1093</p>
-					<p class='ft-contect-time'><span>周一到周五 9:00-17:00<span></p>
-					<p class='ft-contect-title'><a href="">在线客服</a></p>
+				<div class="joinus-page-discount">
+					<h3>加盟优惠政策</h3>
+					<div class='joinus-page-table'>
+						<div>
+							<ul>
+								<li>各省市同类产品只能优选一家上平台，实现产品无竞争，稳销量。</li>
+								<li>各省市同类产品只能优选一家上平台，实现产品无竞争，稳销量。 </li>
+								<li>各省市同类产品只能优选一家上平台，实现产品无竞争，稳销量。 </li>
+								<li>各省市同类产品只能优选一家上平台，实现产品无竞争，稳销量。 </li>
+							</ul>
+						</div>
+						<div>
+							<img src="./img/zsyh.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="joinus-page-friend">
+					<h3>战略合作伙伴</h3>
+					<div class="friends-list">
+						<a href="javascript:;"><img src="./img/hdt-logo.png" alt=""></a>
+						<a href="javascript:;"><img src="./img/jy-logo.png" alt=""></a>
+						<a href="javascript:;"><img src="./img/ssr-logo.png" alt=""></a>
+						<a href="javascript:;"><img src="./img/xdmy-logo.png" alt=""></a>
+						<a href="javascript:;"><img src="./img/ydsh-logo.png" alt=""></a>
+						<a href="javascript:;"><img src="./img/zrp-logo.png" alt=""></a>
+						<a href="javascript:;"><img src="./img/zyh-logo.png" alt=""></a>
+						<a href="javascript:;"><img src="./img/mf-logo.png" alt=""></a>
+					</div>
+					<section class="friends-more">
+						<a href="">查看更多</a>
+					</section>
+				</div>
+				<div class="joinus-page-service">
+					<h3>招商服务</h3>
+					<section>
+						<p>联系人：赵经理</p>
+						<p>招商电话:010-8722-0575</p>
+						<p>email：1652686754@qq.com</p>
+						<p>qq:1652686754</p>
+						<p>邮编:100176</p>
+						<p>公司地址:北京市大兴区亦庄经济技术开发区</p>
+					</section>
 				</div>
 			</section>
-		</footer>
+		</div>
 	</div>
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-	<script src="/lib/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+	<% include footer.ejs%>

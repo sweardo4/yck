@@ -1,279 +1,145 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-
-<head>
-	<meta charset="utf-8">
-	<title>
-		<%= title %>
-	</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="renderer" content="webkit">
-	<!-- seo -->
-	<meta name="keywords" content="亿创客">
-	<meta name="description" content="简介">
-
-	<link href="/lib/css/bootstrap.min.css" rel="stylesheet">
-	<link rel='stylesheet' href='/stylesheets/style.css' />
-	<link rel='stylesheet' href='/stylesheets/iconfont.css' />
-	<!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-	<div class='container-fluid'>
-		<header class="hd">
-			<div class='hd-inc'>
-				<div class='hd-inc-stips all-alignment'>
-					<span class="hd-inc-stips-compony">欢迎您来到亿创客电子商务(北京)有限公司</span><span class='hd-inc-stips-tel yckicon'>401-651-1093</span>
+<% include header.ejs%>
+	<div class="main">
+		<div id="yck_carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#yck_carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#yck_carousel" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="/img/1.png" alt="...">
+					<div class="carousel-caption">
+					</div>
 				</div>
-			</div>
-			<div class="hd-sider-bar">
-				<div class="all-alignment menu">
-					<div class="menu-logo"><img src="/img/logo.png" alt=""></div>
-					<div class="menu-list">
-						<ul id="lava">
-							<li class='menu-list-item current'>
-								<a href="/">
-									<p>首页</p>
-									<p>Home</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/about">
-									<p>关于我们</p>
-									<p>About us</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/joinus">
-									<p>招商加盟</p>
-									<p>Join</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/project">
-									<p>项目展示</p>
-									<p>Project</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/newslist">
-									<p>新闻资讯</p>
-									<p>News</p>
-								</a>
-							</li>
-							<li class='menu-list-item'>
-								<a href="/contectus">
-									<p>联系我们</p>
-									<p>Contect us</p>
-								</a>
-							</li>
-						</ul>
+				<div class="item">
+					<img src="/img/1.png" alt="...">
+					<div class="carousel-caption">
 					</div>
 				</div>
 			</div>
-		</header>
-		<div class="main">
-			<div id="yck_carousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#yck_carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#yck_carousel" data-slide-to="1"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="/img/1.png" alt="...">
-						<div class="carousel-caption">
-						</div>
-					</div>
-					<div class="item">
-						<img src="/img/1.png" alt="...">
-						<div class="carousel-caption">
-						</div>
-					</div>
-				</div>
-				<a class="left carousel-control" href="#yck_carousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">上一张</span>
-				</a>
-				<a class="right carousel-control" href="#yck_carousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">下一张</span>
-				</a>
+			<a class="left carousel-control" href="#yck_carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">上一张</span>
+			</a>
+			<a class="right carousel-control" href="#yck_carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">下一张</span>
+			</a>
+		</div>
+
+		<div class="mv">
+			<div class="all-alignment">
+				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
 			</div>
+		</div>
 
-			<div class="mv">
-				<div class="all-alignment">
-					<iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
-				</div>
-			</div>
-
-			<div class="news">
-				<div class="all-alignment">
-					<section class="news-list">
-						<div class="news-list-latest">
-							<p class='news-logo'>
-								<img src="./img/gsxw.jpg" alt="">
-								<a href="javascript:;">公司新闻</a>
-							</p>
-							<a class="">10月12日，由亿创客电子商务（北京）有限公司（以下简称：亿创…</a>
-						</div>
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<span>10月12日，由亿创客电子商....</span><span>2016-10-21</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<span>10月12日，由亿创客....</span><span>2016-10-21</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<span>10月12日，由亿创客....</span><span>2016-10-21</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;">
-									<span>10月12日，由亿创客....</span><span>2016-10-21</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-					<section class="news-list">
-						<div class="news-list-latest">
-							<p class='news-logo'>
-								<img src="./img/zwdt.jpg" alt="">
-								<a href="javascript:;">政务动态</a>
-							</p>
-							<a class="">10月12日，由亿创客电子商务（北京）有限公司（以下简称：亿创客）…</a>
-						</div>
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<span>10月12日，由亿创客电子商务....</span><span>2016-10-21</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-					<section class="news-list">
-						<div class="news-list-latest">
-							<p class='news-logo'>
-								<img src="./img/hyzx.jpg" alt="">
-								<a href="javascript:;">行业咨询</a>
-							</p>
-							<a class="">10月12日，由亿创客电子商务（北京）有限公司（以下简称：亿创客）主办…</a>
-						</div>
-						<ul>
-							<li>
-								<a href="javascript:;">
-									<span>10月12日，由亿创客电子商务....</span><span>2016-10-21</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-
-				</div>
-			</div>
-
-			<div class="friends">
-				<div class="all-alignment">
-					<section class="friends-w">
-						<h2>战略合作伙伴</h2>
-					</section>
-					<section class="friends-list">
-						<a href="javascript:;"><img src="./img/hdt-logo.png" alt=""></a><a href="javascript:;"><img src="./img/jy-logo.png" alt=""></a><a href="javascript:;"><img src="./img/ssr-logo.png" alt=""></a><a href="javascript:;"><img src="./img/xdmy-logo.png" alt=""></a><a href="javascript:;"><img src="./img/ydsh-logo.png" alt=""></a><a href="javascript:;"><img src="./img/zrp-logo.png" alt=""></a><a href="javascript:;"><img src="./img/zyh-logo.png" alt=""></a><a href="javascript:;"><img src="./img/mf-logo.png" alt=""></a>
-					</section>
-					<section class="friends-more">
-						<a href="">查看更多</a>
-					</section>
-				</div>
-			</div>
-
-			<div class="contect">
-				<section class="all-alignment">
-					<div class="contect-w">
-						<h3>联系我们</h3>
+		<div class="news">
+			<div class="all-alignment">
+				<section class="news-list">
+					<div class="news-list-latest">
+						<p class='news-logo'>
+							<img src="./img/gsxw.jpg" alt="">
+							<a href="javascript:;">公司新闻</a>
+						</p>
+						<a class="">10月12日，由亿创客电子商务（北京）有限公司（以下简称：亿创…</a>
 					</div>
-					<div class="contect-list">
-						<a class="yckicon wx"><i class='iconfont icon-weixin1'></i><label for="">微信</label></a>
-						<a class="yckicon qq"><i class='iconfont icon-qq1'></i><label for="">QQ</label></a>
-						<a class="yckicon tel"><i class='iconfont icon-dianhua'></i><label for="">400-651-1093</label></a>
-					</div>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<span>10月12日，由亿创客电子商....</span><span>2016-10-21</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span>10月12日，由亿创客....</span><span>2016-10-21</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span>10月12日，由亿创客....</span><span>2016-10-21</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span>10月12日，由亿创客....</span><span>2016-10-21</span>
+							</a>
+						</li>
+					</ul>
 				</section>
-			</div>
-			<div class="map">
-				<section class="all-alignment">
-					<div>
-						<img src="./img/map.png" alt="">
+				<section class="news-list">
+					<div class="news-list-latest">
+						<p class='news-logo'>
+							<img src="./img/zwdt.jpg" alt="">
+							<a href="javascript:;">政务动态</a>
+						</p>
+						<a class="">10月12日，由亿创客电子商务（北京）有限公司（以下简称：亿创客）…</a>
 					</div>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<span>10月12日，由亿创客电子商务....</span><span>2016-10-21</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="news-list">
+					<div class="news-list-latest">
+						<p class='news-logo'>
+							<img src="./img/hyzx.jpg" alt="">
+							<a href="javascript:;">行业咨询</a>
+						</p>
+						<a class="">10月12日，由亿创客电子商务（北京）有限公司（以下简称：亿创客）主办…</a>
+					</div>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<span>10月12日，由亿创客电子商务....</span><span>2016-10-21</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+
+			</div>
+		</div>
+		<div class="friends">
+			<div class="all-alignment">
+				<section class="friends-w">
+					<h2>战略合作伙伴</h2>
+				</section>
+				<section class="friends-list">
+					<a href="javascript:;"><img src="./img/hdt-logo.png" alt=""></a>
+					<a href="javascript:;"><img src="./img/jy-logo.png" alt=""></a>
+					<a href="javascript:;"><img src="./img/ssr-logo.png" alt=""></a>
+					<a href="javascript:;"><img src="./img/xdmy-logo.png" alt=""></a>
+					<a href="javascript:;"><img src="./img/ydsh-logo.png" alt=""></a>
+					<a href="javascript:;"><img src="./img/zrp-logo.png" alt=""></a>
+					<a href="javascript:;"><img src="./img/zyh-logo.png" alt=""></a>
+					<a href="javascript:;"><img src="./img/mf-logo.png" alt=""></a>
+				</section>
+				<section class="friends-more">
+					<a href="">查看更多</a>
 				</section>
 			</div>
 		</div>
-		<footer class="ft">
+
+		<div class="contect">
 			<section class="all-alignment">
-				<div class="ft-links">
-					<ul class="ft-links-list">
-						<li>
-							<label for="">关于我们</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">招商加盟</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">项目展示</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">B2C</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">新闻资讯</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">联系我们</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-					</ul>
+				<div class="contect-w">
+					<h3>联系我们</h3>
 				</div>
-				<div class="ft-contect">
-					<p class='ft-contect-tel'>400-651-1093</p>
-					<p class='ft-contect-time'><span>周一到周五 9:00-17:00<span></p>
-					<p class='ft-contect-title'><a href="">在线客服</a></p>
+				<div class="contect-list">
+					<a class="yckicon wx"><i class='iconfont icon-weixin1'></i><label for="">微信</label></a>
+					<a class="yckicon qq"><i class='iconfont icon-qq1'></i><label for="">QQ</label></a>
+					<a class="yckicon tel"><i class='iconfont icon-dianhua'></i><label for="">400-651-1093</label></a>
 				</div>
 			</section>
-		</footer>
+		</div>
+		<div class="map">
+			<section class="all-alignment">
+				<div>
+					<img src="./img/map.png" alt="">
+				</div>
+			</section>
+		</div>
 	</div>
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-	<script src="/lib/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+	<% include footer.ejs%>

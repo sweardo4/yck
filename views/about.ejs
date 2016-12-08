@@ -1,222 +1,105 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-
-<head>
-	<meta charset="utf-8">
-	<title>
-		<%= title %>
-	</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="renderer" content="webkit">
-	<!-- seo -->
-	<meta name="keywords" content="亿创客">
-	<meta name="description" content="简介">
-
-	<link href="/lib/css/bootstrap.min.css" rel="stylesheet">
-	<link rel='stylesheet' href='/stylesheets/style.css' />
-	<link rel='stylesheet' href='/stylesheets/iconfont.css' />
-	<!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-	<div class='container-fluid'>
-		<header class="hd">
-			<div class='hd-inc'>
-				<div class='hd-inc-stips all-alignment'>
-					<span class="hd-inc-stips-compony">欢迎您来到亿创客电子商务(北京)有限公司</span><span class='hd-inc-stips-tel yckicon'>401-651-1093</span>
-				</div>
-			</div>
-			<div class="hd-sider-bar">
-				<div class="all-alignment menu">
-					<div class="menu-logo"><img src="/img/logo.png" alt=""></div>
-					<div class="menu-list">
-						<ul id="lava">
-							<li class='menu-list-item current'>
-								<a href="/">
-									<p>首页</p>
-									<p>Home</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/about">
-									<p>关于我们</p>
-									<p>About us</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/joinus">
-									<p>招商加盟</p>
-									<p>Join</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/project">
-									<p>项目展示</p>
-									<p>Project</p>
-								</a>
-							</li>
-							<li class='menu-list-item '>
-								<a href="/newslist">
-									<p>新闻资讯</p>
-									<p>News</p>
-								</a>
-							</li>
-							<li class='menu-list-item'>
-								<a href="/contectus">
-									<p>联系我们</p>
-									<p>Contect us</p>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-
-
-		<div class="main">
-			<div class="about">
-				<section class="all-alignment about-compony">
-					<div class="about-list">
-						<ul>
-							<li>
-								<a href="javascript:;">公司简介</a>
-							</li>
-							<li>
-								<a href="javascript:;">平台介绍</a>
-							</li>
-							<li>
-								<a href="javascript:;">领导团队</a>
-							</li>
-							<li>
-								<a href="javascript:;" class="active">加入我们</a>
-							</li>
-						</ul>
-						<div class='about-list-seedemail'>
-							<label for="">请投简历至:</label>
-							<a href="javascript:;">xxxxx@xxx.com</a>
-						</div>
-					</div>
-
-					<!-- 公司简介 -->
-					<!-- <div class='about-conpony'>
-						<img src="./img/about1.png" alt="">
-						<p>亿创客·农商商城是由亿创客电子商务（北京）有限公司全资打造的农业电商平台。平台以农产品基地、农资服务两大实业板块。</p>
-					</div> -->
-
-					<!-- 加入我们 -->
-					<div class='about-exam'>
-						<h2>职位列表</h2>
-						<div class="about-exam-head">
-							<p>职位</p>
-							<p>工作职位</p>
-							<p>工作地点</p>
-							<p>操作申请</p>
-						</div>
-						<div class="about-exam-select">
-							<ul>
-								<li>
-									<div class="btn-group">
-										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">选择职位<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu">
-											<li><a href="#">文案编辑</a></li>
-											<li><a href="#">运营总监</a></li>
-											<li><a href="#">IOS开发工程师</a></li>
-											<li><a href="#">Java开发工程师</a></li>
-										</ul>
-									</div>
-								</li>
-								<li>文案</li>
-								<li>北京-亦庄</li>
-								<li><input type="button" class='btn btn-default' value="立即申请"></li>
-							</ul>
-						</div>
-						<div class="about-exam-info">
-
-							<!-- 这里后台富文本编辑前台解析 -->
-							<p class="about-exam-info-Resp">
-								<h3 for="">岗位职责</h3>
-							</p>
-							<p class="about-exam-info-will">
-								<h3 for="">岗位职责</h3>
-							</p>
-							<p class="about-exam-info-other">
-								<h3 for="">岗位职责</h3>
-							</p>
-						</div>
-					</div>
-				</section>
-
-
-			</div>
-		</div>
-
-
-		<footer class="ft">
-			<section class="all-alignment">
-				<div class="ft-links">
-					<ul class="ft-links-list">
+<% include header.ejs%>
+	<div class="main">
+		<div class="about">
+			<section class="all-alignment about-compony">
+				<div class="about-list">
+					<ul>
 						<li>
-							<label for="">关于我们</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
+							<a href="javascript:;">公司简介</a>
 						</li>
 						<li>
-							<label for="">招商加盟</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
+							<a href="javascript:;">平台介绍</a>
 						</li>
 						<li>
-							<label for="">项目展示</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">B2C</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
+							<a href="javascript:;">领导团队</a>
 						</li>
 						<li>
-							<label for="">新闻资讯</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
-						</li>
-						<li>
-							<label for="">联系我们</label>
-							<ul class='ft-links-list-items'>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-								<li><a href="">公司简介</a></li>
-							</ul>
+							<a href="javascript:;" class="active">加入我们</a>
 						</li>
 					</ul>
+					<div class='about-list-seedemail'>
+						<label for="">请投简历至:</label>
+						<a href="javascript:;">xxxxx@xxx.com</a>
+					</div>
 				</div>
-				<div class="ft-contect">
-					<p class='ft-contect-tel'>400-651-1093</p>
-					<p class='ft-contect-time'><span>周一到周五 9:00-17:00<span></p>
-					<p class='ft-contect-title'><a href="">在线客服</a></p>
+
+				<!-- 公司简介 -->
+				<!-- <div class='about-conpony'>
+			<img src="./img/about1.png" alt="">
+			<p>亿创客·农商商城是由亿创客电子商务（北京）有限公司全资打造的农业电商平台。平台以农产品基地、农资服务两大实业板块。</p>
+		</div> -->
+
+				<!-- 加入我们 -->
+				<div class='about-exam'>
+					<h3>职位列表</h3>
+					<div class="about-exam-head">
+						<p>职位</p>
+						<p>工作职位</p>
+						<p>工作地点</p>
+						<p>操作申请</p>
+					</div>
+					<div class="about-exam-select">
+						<ul>
+							<li>
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">选择职位<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">文案编辑</a></li>
+										<li><a href="#">运营总监</a></li>
+										<li><a href="#">IOS开发工程师</a></li>
+										<li><a href="#">Java开发工程师</a></li>
+									</ul>
+								</div>
+								<!-- <select class="" name="">
+							<option value="">文案编辑</option>
+						</select> -->
+							</li>
+							<li>文案</li>
+							<li>北京-亦庄</li>
+							<li><input type="button" class='sendexam' value="立即申请"></li>
+						</ul>
+					</div>
+					<div class="about-exam-info">
+						<!-- 这里后台富文本编辑前台解析 -->
+						<div class="">
+							<p class="about-exam-info-Resp">
+								岗位职责
+							</p>
+							<ol>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+							</ol>
+						</div>
+
+						<div class="">
+							<p class="about-exam-info-Resp">
+								岗位职责
+							</p>
+							<ol>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+							</ol>
+						</div>
+						<div class="">
+							<p class="about-exam-info-Resp">
+								岗位职责
+							</p>
+							<ol>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+								<li>负责撰写亿创客官方网站文案及产品宣传文案</li>
+							</ol>
+						</div>
+						<div><input type="button" class='sendexam' value="立即申请"></div>
+					</div>
 				</div>
 			</section>
-		</footer>
+		</div>
+		<% include stip.ejs %>
 	</div>
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-	<script src="/lib/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+	<% include footer.ejs%>

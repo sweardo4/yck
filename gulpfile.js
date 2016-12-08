@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
 	return gulp.src('./src/stylesheets/**/*.scss')
 		.pipe(sass({
-			outputStyle: 'compressed'
+			// outputStyle: 'compressed'
 		}).on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(gulp.dest('./public/stylesheets'));

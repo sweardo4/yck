@@ -5,6 +5,7 @@ router.get('/', async function (ctx, next) {
     title: 'joinus'
   };
   await ctx.render('joinus', {
+
   });
 })
 module.exports = router;
