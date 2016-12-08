@@ -224,7 +224,7 @@ ul {
       .main .friends-w h2 {
         font-weight: bold; }
     .main .friends-list {
-      text-align: left;
+      text-align: center;
       padding-top: 22px;
       border-top: 1px solid #acacac; }
       .main .friends-list a {
@@ -237,8 +237,6 @@ ul {
         background-color: #f5f5f5; }
         .main .friends-list a img {
           width: 100%; }
-        .main .friends-list a:first-child {
-          margin-left: 0; }
     .main .friends-more {
       text-align: center; }
       .main .friends-more a {
@@ -579,7 +577,7 @@ ul {
       padding-right: 60px;
       line-height: 30px;
       font-size: 16px;
-      text-align: left; }
+      text-align: center; }
       .ft-links-list > li label {
         display: inline; }
       .ft-links-list > li a {
