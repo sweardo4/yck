@@ -19,6 +19,7 @@ const project = require('./routes/project');
 const joinus = require('./routes/joinus');
 const contectus = require('./routes/contectus');
 
+const map  = require('./routes/map.js');
 
 // api
 const testapi = require('./routes/api/test.js')
@@ -72,6 +73,7 @@ router.use('/contectus', contectus.routes(), contectus.allowedMethods());
 
 router.use('/api/test',testapi.routes(),testapi.allowedMethods());
 
+router.use('/map',map.routes(),map.allowedMethods());
 
 app.use(router.routes(), router.allowedMethods());
 // response
