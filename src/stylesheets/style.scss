@@ -541,9 +541,11 @@ ul {
 				color: rgba(#000,.8);
 				margin: 0;
 				padding: 20px 0;
-				background: -prefix-linear-zgradient(top, #ececec, #c0c0c0);
-				background: linear-gradient(to bottom, #ececec, #c0c0c0);
+				border-bottom: 1px solid #ccc;
+				background: -prefix-linear-zgradient(top, #f8f8f8, #e8e8e9);
+				background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
 			}
+
 
 			&-head {
 				width: 100%;
@@ -557,8 +559,8 @@ ul {
 					padding: 10px 0;
 					text-align: center;
 					border-left: 1px solid #ccc;
-					background: -prefix-linear-zgradient(top, #ececec, #c0c0c0);
-					background: linear-gradient(to bottom, #ececec, #c0c0c0);
+					background: -prefix-linear-zgradient(top, #f8f8f8, #e8e8e9);
+					background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
 				}
 			}
 
