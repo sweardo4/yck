@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font: 14px 'Microsoft YaHei',Arial,Helvetica,sans-serif; }
 
@@ -364,29 +363,13 @@ ul {
           background: -prefix-linear-zgradient(top, #f8f8f8, #e8e8e9);
           background: -webkit-linear-gradient(top, #f8f8f8, #e8e8e8);
           background: linear-gradient(to bottom, #f8f8f8, #e8e8e8); }
+      .main .about-exam .panel-heading {
+        padding: 0;
+        color: rgba(0, 0, 0, 0.6); }
       .main .about-exam-select {
         background-color: #e8e9e8;
+        cursor: pointer;
         border: 1px solid #ccc; }
-        .main .about-exam-select select {
-          width: 150px;
-          /*注意在下拉框中，width是包括border的宽度的*/
-          height: 30px;
-          border-radius: 5px;
-          border: 1px solid #e8e8e8;
-          background-color: #e8e8e8;
-          background-repeat: no-repeat;
-          /*背景图像的尺寸：第一个值为宽度，第二值为高度*/
-          background-size: 100px 30px, 8px 8px, 30px 30px, 1px 30px;
-          /*背景图片：多张图片用","分割*/
-          /*repeating-linear-gradient() 函数用于重复线性渐变：参数分别为角度，颜色1，颜色2,...*/
-          background-image: -webkit-repeating-linear-gradient(225deg, #697b95 0%, #697b95 50%, transparent 50%, transparent 100%), -webkit-repeating-linear-gradient(315deg, #697b95 0%, #697b95 50%, transparent 50%, transparent 100%), -webkit-linear-gradient(#FFFFFF 0%, #F8F9Fd, #EFFAFA 100%), -webkit-repeating-linear-gradient(#bfccdc 0%, #bfccdc 100%);
-          background-image: repeating-linear-gradient(225deg, #697b95 0%, #697b95 50%, transparent 50%, transparent 100%), repeating-linear-gradient(135deg, #697b95 0%, #697b95 50%, transparent 50%, transparent 100%), linear-gradient(#FFFFFF 0%, #F8F9Fd, #EFFAFA 100%), repeating-linear-gradient(#bfccdc 0%, #bfccdc 100%);
-          /*竖分割线*/
-          /*背景图片的位置：第一个参数为水平位置，第二参数为垂直位置*/
-          background-position: 150px 10px, 130px 10px, right top, 167px top;
-          appearance: none;
-          -moz-appearance: none;
-          -webkit-appearance: none; }
         .main .about-exam-select > ul {
           width: 100%;
           display: table; }

@@ -2,13 +2,17 @@
 
 window.onload = function(){
 	var is_stip = true;
-	$(document).on('click','.sendexam',function(){
+	$(document).on('click','.sendexam',function(e){
+		e.preventDefault();
+		e.stopPropagation();
 		if(is_stip){
 			$('.sendexam-stip').show();
 			is_stip = false;
 		}
 	})
-	$(document).on('click','.sendexam-stip',function(){
+	$(document).on('click','.sendexam-stip',function(e){
+		e.preventDefault();
+		e.stopPropagation();
 		$('.sendexam-stip').hide();
 		is_stip=true;
 	})
