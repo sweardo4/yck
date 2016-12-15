@@ -34,6 +34,14 @@ ul {
 		-webkit-text-stroke-width: 0.2px;
 		-moz-osx-font-smoothing: grayscale;
 	}
+	&:after {
+		font-family: "iconfont" !important;
+		font-size: 16px;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke-width: 0.2px;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }
 
 .glyphicon {
@@ -547,7 +555,14 @@ ul {
 			font-size: 20px;
 			border: 1px solid #ccc;
 			border-radius: 6px;
-
+			.panel{
+				border: none;
+				&:first-child{
+					.about-exam-select{
+						border-top: 1px solid #ccc;
+					}
+				}
+			}
 			h3 {
 				color: rgba(#000,.8);
 				margin: 0;
@@ -585,33 +600,6 @@ ul {
 			&-select {
 				background-color: rgba(232,233,232,1);
 				cursor: pointer;
-				// select {
-				// 	width: 150px;
-				// 	/*注意在下拉框中，width是包括border的宽度的*/
-				// 	height: 30px;
-				// 	border-radius: 5px;
-				// 	border: 1px solid #e8e8e8;
-				// 	background-color: #e8e8e8;
-				// 	background-repeat: no-repeat;
-				// 	/*背景图像的尺寸：第一个值为宽度，第二值为高度*/
-				// 	background-size: 100px 30px, 8px 8px, 30px 30px, 1px 30px;
-				// 	/*背景图片：多张图片用","分割*/
-				// 	/*repeating-linear-gradient() 函数用于重复线性渐变：参数分别为角度，颜色1，颜色2,...*/
-				// 	background-image:repeating-linear-gradient(225deg, rgb(105, 123, 149) 0%, rgb(105, 123, 149) 50%, transparent 50%, transparent 100%),
-				// 	/*组合成三角形图标*/
-				// 	repeating-linear-gradient(135deg, rgb(105, 123, 149) 0%, rgb(105, 123, 149) 50%, transparent 50%, transparent 100%),
-				// 	/*组合成三角形图标*/
-				// 	linear-gradient(#FFFFFF 0%, #F8F9Fd, #EFFAFA 100%),
-				// 	/*竖分割线右侧的背景色*/
-				// 	repeating-linear-gradient( rgb(191, 204, 220) 0%, rgb(191, 204, 220) 100%);
-				// 	/*竖分割线*/
-				// 	/*背景图片的位置：第一个参数为水平位置，第二参数为垂直位置*/
-				// 	background-position: 150px 10px, 130px 10px, right top, 167px top;
-				// 	appearance: none;
-				// 	-moz-appearance: none;
-				// 	-webkit-appearance: none;
-				// }
-
 				& > ul {
 					width: 100%;
 					display: table;
@@ -621,9 +609,25 @@ ul {
 						padding: 10px 0 0;
 						text-align: center;
 						display: table-cell;
+						span{
+							label{
+								display: table-cell;
+								padding: 0 5px;
+							}
+							i{
+								display: table-cell;
+								padding: 0 5px;
+								font-size: 22px;
+							}
+							.icon-new{
+								color:$premery;
+							}
+
+						}
 					}
 				}
-				border: 1px solid #ccc;
+				// border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
 			}
 
 			&-info {

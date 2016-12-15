@@ -22,6 +22,14 @@ ul {
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale; }
 
+.yckicon:after, .glyphicon:after {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
 .glyphicon:before {
   font-size: 60px;
   color: #fff; }
@@ -346,6 +354,10 @@ ul {
       font-size: 20px;
       border: 1px solid #ccc;
       border-radius: 6px; }
+      .main .about-exam .panel {
+        border: none; }
+        .main .about-exam .panel:first-child .about-exam-select {
+          border-top: 1px solid #ccc; }
       .main .about-exam h3 {
         color: rgba(0, 0, 0, 0.8);
         margin: 0;
@@ -376,7 +388,7 @@ ul {
       .main .about-exam-select {
         background-color: #e8e9e8;
         cursor: pointer;
-        border: 1px solid #ccc; }
+        border-bottom: 1px solid #ccc; }
         .main .about-exam-select > ul {
           width: 100%;
           display: table; }
@@ -385,6 +397,15 @@ ul {
             padding: 10px 0 0;
             text-align: center;
             display: table-cell; }
+            .main .about-exam-select > ul > li span label {
+              display: table-cell;
+              padding: 0 5px; }
+            .main .about-exam-select > ul > li span i {
+              display: table-cell;
+              padding: 0 5px;
+              font-size: 22px; }
+            .main .about-exam-select > ul > li span .icon-new {
+              color: #0dc872; }
       .main .about-exam-info {
         padding-bottom: 20px; }
         .main .about-exam-info div {
