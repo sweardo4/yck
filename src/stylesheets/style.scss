@@ -200,12 +200,10 @@ ul {
 			display: none;
 			position: fixed;
 			width: 100%;
-			height: 1200px;
+			height: 100%;
 			background-color: rgba(#000,.25);
-			top: 0;
-			left: 0;
-
-			b {
+			top:0;
+			i {
 				position: absolute;
 				top: 20px;
 				right: 20px;
@@ -213,15 +211,19 @@ ul {
 				font-size: 30px;
 				cursor: pointer;
 			}
-
 			div {
 				position: absolute;
-				top: 30%;
-				display: inline-block;
-				padding: 20px 40px;
-				left: 40%;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				margin: auto;
+				width: 450px;
+				height: 100px;
 				background-color: $myw;
-
+				h3{
+					line-height: 64px;
+				}
 				span {
 					color: $premery;
 				}
