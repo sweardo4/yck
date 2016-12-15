@@ -34,7 +34,7 @@ ul {
   font-size: 60px;
   color: #fff; }
 
-.glyphicon-chevron-left:before {
+.glyphicon-chevron-right:before {
   content: '\e501'; }
 
 .glyphicon-chevron-left:before {
