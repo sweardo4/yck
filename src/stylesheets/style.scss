@@ -17,6 +17,8 @@ ul {
 	padding: 0;
 }
 
+
+
 .all-alignment {
 	width: 62.5% !important;
 	min-width: 980px !important;
@@ -172,12 +174,19 @@ ul {
 	text-align: center;
 	// 立即发送简历按钮
 	.sendexam {
-		background: -prefix-linear-zgradient(top, #47f3a4, #13ae67) !important;
-		background: linear-gradient(to bottom, #47f3a4, #13ae67) !important;
+		// background: -prefix-linear-zgradient(top, #47f3a4, #13ae67) !important;
+		// background: linear-gradient(to bottom, #47f3a4, #13ae67) !important;
+		background: -prefix-linear-zgradient(top, #f8f8f8, #e8e8e9) !important;
+		background: linear-gradient(to bottom, #f8f8f8, #f8f8f8) !important;
 		border-radius: 5px;
 		border: none;
-		color: $myw;
+		color: rgba(#000,.6);
 		padding: 5px 10px;
+		&:hover{
+			background: -prefix-linear-zgradient(top, #47f3a4, #13ae67) !important;
+			background: linear-gradient(to bottom, #47f3a4, #13ae67) !important;
+			color: rgba(#fff,1);
+		}
 		// 立即发送弹窗
 		&-stip {
 			display: none;
@@ -476,6 +485,8 @@ ul {
 		margin-top: 20px;
 		text-align: center;
 
+
+
 		&-list {
 			width: 100%;
 			display: table;
@@ -546,6 +557,9 @@ ul {
 				background: linear-gradient(to bottom, #f8f8f8, #e8e8e8);
 			}
 
+			.panel-group .panel+.panel{
+				margin-top:0;
+			}
 
 			&-head {
 				width: 100%;
@@ -938,7 +952,7 @@ ul {
 				padding-right: 60px;
 				line-height: 30px;
 				font-size: 16px;
-				text-align: center;
+				text-align: left;
 
 				a {
 					color: #a5a5a5;

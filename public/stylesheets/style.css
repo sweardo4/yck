@@ -120,13 +120,18 @@ ul {
   /************* join page start ************/
   /************* join page end ************/ }
   .main .sendexam {
-    background: -prefix-linear-zgradient(top, #47f3a4, #13ae67) !important;
-    background: -webkit-linear-gradient(top, #47f3a4, #13ae67) !important;
-    background: linear-gradient(to bottom, #47f3a4, #13ae67) !important;
+    background: -prefix-linear-zgradient(top, #f8f8f8, #e8e8e9) !important;
+    background: -webkit-linear-gradient(top, #f8f8f8, #f8f8f8) !important;
+    background: linear-gradient(to bottom, #f8f8f8, #f8f8f8) !important;
     border-radius: 5px;
     border: none;
-    color: #fdffff;
+    color: rgba(0, 0, 0, 0.6);
     padding: 5px 10px; }
+    .main .sendexam:hover {
+      background: -prefix-linear-zgradient(top, #47f3a4, #13ae67) !important;
+      background: -webkit-linear-gradient(top, #47f3a4, #13ae67) !important;
+      background: linear-gradient(to bottom, #47f3a4, #13ae67) !important;
+      color: white; }
     .main .sendexam-stip {
       display: none;
       position: fixed;
@@ -349,6 +354,8 @@ ul {
         background: -prefix-linear-zgradient(top, #f8f8f8, #e8e8e9);
         background: -webkit-linear-gradient(top, #f8f8f8, #e8e8e8);
         background: linear-gradient(to bottom, #f8f8f8, #e8e8e8); }
+      .main .about-exam .panel-group .panel + .panel {
+        margin-top: 0; }
       .main .about-exam-head {
         width: 100%;
         display: table;
@@ -572,7 +579,7 @@ ul {
       padding-right: 60px;
       line-height: 30px;
       font-size: 16px;
-      text-align: center; }
+      text-align: left; }
       .ft-links-list > li label {
         display: inline; }
       .ft-links-list > li a {
