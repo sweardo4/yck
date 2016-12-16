@@ -16,7 +16,6 @@ body {
 ul {
 	padding: 0;
 }
-
 .all-alignment {
 	width: 62.5% !important;
 	min-width: 980px !important;
@@ -662,7 +661,7 @@ ul {
 						font-size: 20px;
 						&:last-child{
 							font-size: 16px;
-							color:rgba(#222,.6);
+							color:rgba(#222,.6)	;
 						}
 					}
 				}
