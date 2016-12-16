@@ -42,13 +42,13 @@ inline-block 存在bug
 
 
 
-## lamp安装
-php5.6 - 7.0
-卸载原有php系统自带
+### lamp安装
+#### php5.6 - 7.0
+#### 卸载原有php系统自带
 ```
 sudo aptitude purge `dpkg -l | grep php| awk '{print $2}' |tr "\n" " "`
 ```
-Add the PPA
+#### Add the PPA
 ```
 sudo add-apt-repository ppa:ondrej/php
 ```
@@ -59,7 +59,7 @@ sudo apt-get install php5.6
 
 ```
 
-问题
+#### 问题
 ------
 WARNING: add-apt-repository is broken with non-UTF-8 locales
 ```
@@ -68,7 +68,7 @@ sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
 ```
 -------
 
-apache2
+### apache2
 
 ```
 sudo apt install apache2
@@ -76,9 +76,9 @@ sudo apt-get install libapache2-mod-php
 ```
 
 ----
-mysql
+### mysql
 
-删除 mysql
+#### 删除 mysql
 ```
 sudo apt-get autoremove --purge mysql-server-5.0
 sudo apt-get remove mysql-server
@@ -88,7 +88,7 @@ sudo apt-get remove mysql-common //这个很重要
 清理残留数据
 dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
 ```
-安装 mysql
+#### 安装 mysql
 ```
 sudo apt-get install mysql-server
 sudo apt-get install mysql-client
@@ -100,7 +100,7 @@ sudo netstat -tap | grep mysql
 
 tcp 0 0 localhost.localdomain:mysql *:* LISTEN -
 ```
-如果服务器不能正常运行，您可以通过下列命令启动它：
+#### 如果服务器不能正常运行，您可以通过下列命令启动它：
 
 ```
 sudo /etc/init.d/mysql restart
@@ -109,7 +109,15 @@ sudo /etc/init.d/mysql restart
 ```
 $mysql -uroot -p 管理员密码
 ```
-配置 MySQL 的管理员密码：
+#### 配置 MySQL 的管理员密码：
 ```
 sudo mysqladmin -u root password newpassword
+```
+
+
+
+#### laravel 生产环境部署访问
+```
+php artisan serve --host=some.other.domain --port=8001
+
 ```

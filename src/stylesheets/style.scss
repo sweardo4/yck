@@ -619,10 +619,15 @@ ul {
 							i{
 								display: table-cell;
 								padding: 0 5px;
-								font-size: 22px;
+								font-size: 18px;
 							}
-							.icon-new{
+
+							.icon-new2{
 								color:$premery;
+							}
+							.icon-jiantouxia{
+								font-size: 20px;
+								color:#a7a4a5;
 							}
 
 						}
@@ -904,12 +909,10 @@ ul {
 						}
 					}
 				}
-
 				&:last-child {
 					text-align: center;
 					padding: 20px 10px;
 				}
-
 				img {
 					width: 100%;
 				}
