@@ -12,6 +12,12 @@ const logger = require('koa-logger');
 const index = require('./routes/index');
 const users = require('./routes/users');
 const about = require('./routes/about');
+const about_joinus = require('./routes/about_joinus');
+const about_platform = require('./routes/about_platform');
+
+const about_lead = require('./routes/about_lead');
+
+
 const newslist = require('./routes/newslist');
 const newsinfo = require('./routes/news-info');
 
@@ -65,6 +71,9 @@ app.use(async (ctx, next) => {
 router.use('/', index.routes(), index.allowedMethods());
 router.use('/users', users.routes(), users.allowedMethods());
 router.use('/about', about.routes(), about.allowedMethods());
+router.use('/about/about_joinus', about_joinus.routes(), about_joinus.allowedMethods());
+router.use('/about/about_platform', about_platform.routes(), about_platform.allowedMethods());
+router.use('/about/about_lead', about_lead.routes(), about_lead.allowedMethods());
 router.use('/newslist', newslist.routes(), newslist.allowedMethods());
 router.use('/newslist/newsinfo', newsinfo.routes(), newsinfo.allowedMethods());
 router.use('/joinus', joinus.routes(), joinus.allowedMethods());
