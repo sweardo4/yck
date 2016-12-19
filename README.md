@@ -122,6 +122,7 @@ php artisan serve --host=some.other.domain --port=8001
 
 ```
 
+
 ## 安装Composer
 
 安装Composer以及使用Packagist中国全量镜像（全局安装/全局配置）
