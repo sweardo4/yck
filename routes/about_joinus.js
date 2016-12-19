@@ -2,9 +2,9 @@ var router = require('koa-router')();
 
 router.get('/', async function (ctx, next) {
   ctx.state = {
-    title: '公司简介'
+    title: '加入我们'
   };
-  await ctx.render('about', {
+  await ctx.render('about_joinus', {
   });
 })
 module.exports = router;
