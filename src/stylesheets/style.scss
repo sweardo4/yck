@@ -988,7 +988,6 @@ ul {
 			font-size:18px;
 		}
 
-
 		.fanye_share{
 			display: inline-block;
 			position: absolute;
@@ -1136,6 +1135,13 @@ ul {
 		display: inline-table;
 		padding: 20px 0;
 		border-bottom: 1px solid #888;
+
+	}
+	section{
+		&:last-child{
+			border-bottom: none;
+			color:#a0a0a0;
+		}
 	}
 
 	ul {
