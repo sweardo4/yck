@@ -1,0 +1,29 @@
+<script src="/lib/js/simple-share.min.js"></script>
+<script type="text/javascript">
+var shareurl = window.location.href;
+var sharetitle =  document.getElementById("meta-title").content;
+var sharecontent = document.getElementById("meta-content").content;
+
+var share = new SimpleShare({
+	// url: shareurl,
+	url: 'http://www.baidu.com',
+	title: sharetitle,
+	content: sharecontent,
+});
+</script>
+
+<script type="text/javascript">
+ $(function(){
+	 var is_share = false;
+	 $('.icon-fenxiang').on('click',function(){
+		 if(!is_share){
+			 $(this).siblings().show();
+			 is_share = true;
+		 }else{
+			 $(this).siblings().hide();
+			 is_share = false;
+		 }
+
+	 })
+ })
+</script>

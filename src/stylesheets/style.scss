@@ -881,7 +881,7 @@ ul {
 
 	.fanye {
 		margin: 40px 0;
-
+		position: relative;
 		ul {
 			display: inline-table;
 			list-style: none;
@@ -928,16 +928,82 @@ ul {
 				display: table-cell;
 				padding: 10px;
 				color: $gey;
-
+				&:first-child{
+					width: 18%;
+				}
 				&:nth-child(2) {
-					width: 78%;
+					width: 60%;
 					text-align: left;
+				}
+				&:last-child{
+					position: relative;
+					text-align: right;
+					i{
+						display: inline-block;
+						font-size: 34px;
+						cursor: pointer;
+						color:$premery;
+					}
+
+
 				}
 			}
 		}
 
+		.share-btn-group{
+			display: none;
+			position: absolute;
+			top:0;
+			right:50px;
+			line-height: 55px;
+			label{
+				display: table-cell;
+				width: 100px;
+			}
+			a{
+				i{
+					font-size: 34px;
+				}
+				padding:0 5px;
+				display: table-cell;
+				.icon-weixin{
+					color:#31c43f;
+				}
+				.icon-weibo{
+					color:#fc7670;
+				}
+				.icon-kongjian{
+					color:#f6ae3d;
+				}
+				.icon-qq{
+					color:#70a7f4;
+				}
+
+			}
+		}
+
 		&-w {
+			margin: 20px 0;
 			text-align: left;
+			font-size:18px;
+		}
+
+
+		.fanye_share{
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			a{
+				text-decoration: none;
+			}
+			.share-btn-group{
+				display: block;
+				width: 250px;
+				right: 0;
+				label{
+					font-size:20px;
+				}
+			}
 		}
 	}
 	/************* news info end ************/

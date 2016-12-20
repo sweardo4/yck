@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1481871994510'); /* IE9*/
-  src: url('iconfont.eot?t=1481871994510#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1481871994510') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1481871994510') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1481871994510#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1482222286288'); /* IE9*/
+  src: url('iconfont.eot?t=1482222286288#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1482222286288') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1482222286288') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1482222286288#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -17,25 +17,35 @@
 
 .icon-cha:before { content: "\f00a5"; }
 
+.icon-weibo:before { content: "\e603"; }
+
 .icon-jiantouxia:before { content: "\e6a1"; }
+
+.icon-kongjian:before { content: "\e661"; }
 
 .icon-gengduo:before { content: "\e60e"; }
 
+.icon-qq:before { content: "\e616"; }
+
 .icon-loading:before { content: "\e62b"; }
+
+.icon-weixin:before { content: "\e6f7"; }
 
 .icon-new:before { content: "\e61a"; }
 
+.icon-fenxiang:before { content: "\e636"; }
+
 .icon-iconfonticonfonticonfont20:before { content: "\e638"; }
 
-.icon-qq:before { content: "\e64c"; }
+.icon-qq1:before { content: "\e64c"; }
 
 .icon-cha1:before { content: "\e606"; }
 
-.icon-weixin:before { content: "\e63b"; }
+.icon-weixin1:before { content: "\e63b"; }
 
 .icon-new1:before { content: "\e633"; }
 
-.icon-shuangjiantou:before { content: "\e636"; }
+.icon-shuangjiantou:before { content: "\e637"; }
 
 .icon-new2:before { content: "\e644"; }
 
@@ -43,11 +53,11 @@
 
 .icon-new3:before { content: "\e65c"; }
 
-.icon-new4:before { content: "\e661"; }
+.icon-new4:before { content: "\e662"; }
 
 .icon-zuixinnew3:before { content: "\e618"; }
 
-.icon-qq1:before { content: "\e61f"; }
+.icon-qq2:before { content: "\e61f"; }
 
 .icon-new-copy-copy:before { content: "\e607"; }
 

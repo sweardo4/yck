@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="keywords" id='meta-title'content="宜创客,宜创客新闻">
+	<meta name="description" id='meta-content' content="这就是分享的文字也就是新闻的标题">
+</head>
+<body>
+	<a href="javascript:share.weibo();">weibo</a>
+	<a href="javascript:share.qzone();">qzone</a>
+	<a href="javascript:share.qq();">tqq</a>
+	<a  href="javascript:share.weixin();">weixin</a>
+	<script src="simple-share.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	var shareurl = window.location.href;
+	var sharetitle =  document.getElementById("meta-title").content;
+	var sharecontent = document.getElementById("meta-content").content;
+
+	var share = new SimpleShare({
+		// url: shareurl,
+		url: 'http://www.baidu.com',
+		title: sharetitle,
+		content: sharecontent,
+	});
+	</script>
+</body>
+</html>

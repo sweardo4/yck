@@ -169,3 +169,9 @@ composer create-project laravel/laravel ams --prefer-dist
 文／QFZJB（简书作者）
 原文链接：http://www.jianshu.com/p/2836017b5348
 著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
+
+
+
+-----------------
+yck2016
+RXCTQtVGDJhK4mbK
